@@ -1,0 +1,9 @@
+data/
+state/
+logs/
+out/
+_site/.git/
+_credhelper.cmd
+config/local.yaml
+*.pyc
+__pycache__/
