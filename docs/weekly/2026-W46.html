@@ -133,7 +133,7 @@ footer p{margin:5px 0}
 </style></head><body>
 <header><div class="wrap">
 <div class="eyebrow">MONEY RADAR / WEEKLY ROLLUP</div>
-<h1>每周赚钱热点汇总 <span class="badge-mode">机器汇总 · 待 DSH 周度结论</span></h1>
+<h1>每周赚钱热点汇总 <span class="badge-mode reviewed">DSH 已复核</span></h1>
 <div class="sub">统计区间 2026-11-09 ~ 2026-11-15（上一自然周，周一至周日）。汇总一周内多份日报的方向演变、项目复现与判定稳定性；只使用真实存在的日报。</div>
 <div class="meta-row">
 <div class="meta-item">周次 · <b>2026-W46</b></div>
@@ -230,7 +230,19 @@ footer p{margin:5px 0}
 <tr><td><a href="https://github.com/discourse/discourse" target="_blank" rel="noopener">discourse</a></td><td>未核实</td><td class="num">1/7</td><td class="num">55.0</td><td><span class="tag lo">待判定</span></td></tr>
 </tbody></table></section>
 <section><h2><span class="num">5</span>DSH 周度结论</h2>
-<div class="card">本周汇总为<b>机器汇总</b>，尚未经 DSH 周度复核。趋势与判定变化仅为数据观察，不含「该不该投入」的结论。</div>
+<div class="card good">
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-15T09:16:03</p>
+<p>上线第一周的周报只覆盖 11-12~11-15 四天（11-09~11-11 尚未部署，明确列为缺失，不编造、不倒填），因此本周结论只能算『初步观察』，不能算完整周趋势。四天、378 个信号、25 个 DSH 项目判定里 go 全为 0：no 集中在 1.5~3.3 万星的成熟基础设施（连续 4 天占基线 Top、无当日提及、无付费意向），watch 集中在 xmake / X-AnyLabeling / PaperStudio 这类技术价值真实但缺当日成交证据的项目。唯一正向变化是 11-15 的 PaperStudio 首次同时具备当日提及、收费意向词、已核实星数与方向 B 归属，是四周观察里最接近可投入的一个，但单条证据且属描述语境，仍压在观察位。本周也确认了一个跨日事实：11-12 动态发现的 36 个新项目在之后三天一个都没复现，那是『好用工具推荐』型问题的单日脉冲而非持续信号——这类复现检验才是周报真正的价值。</p>
+<ul class="pts">
+<li>【覆盖率与不确定性】4/7 天，缺失 11-09/11-10/11-11 是系统上线前日期，不是采集失败。覆盖率 57% 时，『方向持续/脉冲』只能作定性参考，不能当统计结论；首份完整 7 天周报要等 11-22。</li>
+<li>【判定反复·需警惕】AI 变现、独立开发、知识付费 三个方向出现 verdict_changed=True，在 real/hype/unknown 之间来回跳。但这不是需求在变，是每日 6 个关键词轮换导致同一方向抓到不同问题、付费意向词命中数波动；在趋势口径修好之前，这些反复不能解读为信号变化。</li>
+<li>【pv 变化率失真】周报里独立开发 pv_rate +459060%、知识付费 -95.6% 不是真实涨跌：pv 是不同问题浏览量求和，横向不可比。修法为按 question_id 对齐后再算 delta，已连续 3 天在日报里标为必须修。</li>
+<li>【跨日复现·本周最硬结论】11-12 的 36 个新发现项目（localsend / rustdesk / Stirling-PDF 等）在 11-13~11-15 复现 0 次，且新发现数连续 3 天为 0；说明动态发现从『推荐型』问题里挖到的是工具清单，不是需求信号。11-14 起问题语义转为『开源项目挣不到钱』『独立开发者晚吗』等商业化怀疑型，与方向 A/B 的审计结论互为印证。</li>
+<li>【项目复现】56 个项目里 17 个有 DSH 判定、无一带 go；连续 4 天占 Top5 的 go-zero/gopeed/ecapture/drawnix/PLFM_RADAR 命中数基本为 0，属知识库占位。建议下一周给『连续 N 天无当日证据』的项目自动降权，把 today_focus 名额让给真有当日信号的项目。</li>
+<li>【判定稳定性】4 天 25 个判定（11-12:14 / 11-13:3 / 11-14:8 / 11-15:8），其中 11-13 为 11-14 事后补做并已标注；go 始终为 0，说明证据门槛设得合理，但也说明当前数据源尚未产出可投入信号。</li>
+<li>【下周待办】① 趋势 delta 按 question_id 对齐；② 知识库占位项目自动降权；③ 补求购型意图查询；④ 新发现项目调 GitHub API 核实星数；⑤ 修好跨命令覆盖：日报发布不再冲掉周报的 DSH 结论（本次已修 publish_v2）。</li>
+</ul>
+</div>
 </section>
 <footer>
 <p><b>免责声明</b>：本报告仅作自动化研究与信息整理，不构成投资、副业或商业决策建议。</p>
