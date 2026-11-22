@@ -133,7 +133,7 @@ footer p{margin:5px 0}
 </style></head><body>
 <header><div class="wrap">
 <div class="eyebrow">MONEY RADAR / DAILY · PROJECT LEVEL</div>
-<h1>每日赚钱热点确认说明 <span class="badge-mode">机器判定 · 本日未复核</span></h1>
+<h1>每日赚钱热点确认说明 <span class="badge-mode reviewed">DSH 已复核</span></h1>
 <div class="sub">落到具体项目层级：用 CLI 真实指标量化需求，逐日差分判断持续度，从回答正文找付费意向；机器只给可核查基线，可行性与是否可投入由 DSH 判定。</div>
 <div class="meta-row">
 <div class="meta-item">日期 · <b>2026-11-22</b></div>
@@ -141,7 +141,7 @@ footer p{margin:5px 0}
 <div class="meta-item">信号数 · <b>95</b></div>
 <div class="meta-item">具体项目 · <b>28</b></div>
 <div class="meta-item">趋势快照 · <b>11 天</b></div>
-<div class="meta-item">已判定项目 · <b>0</b></div>
+<div class="meta-item">已判定项目 · <b>27</b></div>
 <div class="meta-item">生成 · <b>2026-11-22T08:30:41</b></div>
 </div></div></header><div class="wrap">
 <section><h2><span class="num">1</span>数据概览</h2>
@@ -151,7 +151,7 @@ footer p{margin:5px 0}
 <div class="stat"><div class="v">3</div><div class="l">真需求</div></div>
 <div class="stat"><div class="v">2</div><div class="l">仅热度</div></div>
 <div class="stat"><div class="v">2</div><div class="l">无法确认</div></div>
-<div class="stat"><div class="v">0</div><div class="l">已判定项目</div></div>
+<div class="stat"><div class="v">27</div><div class="l">已判定项目</div></div>
 </div>
 <div class="card warn"><h3 style="margin-top:0">⚠️ 先看这个：数据口径与局限</h3><p style="margin-bottom:0">本报告只回答两件事：<b>今天有哪些具体方向/项目值得看</b>，以及<b>它们的需求是不是真的</b>。CLI 的 <code>*_7_days</code> 与 <code>pv_incr_rate</code> 实测全为 0，趋势由本地逐日快照差分得出；满 7 天前不判定持续需求。今日快照第 <b>11</b> 天。「是否可以投入」由 DSH 判定层给出，未判定时明确显示「待 DSH 判定」。</p></div>
 </section>
@@ -220,7 +220,15 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2887084076" target="_blank" rel="noopener">回答 2887084076（679 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>Go 微服务脚手架，买家是后端团队，采购走公司/开源捐赠路径。个人在其上做二开或封装，没有任何可以卖给中小客户的截面；且标准库 + 云厂商模板正在持续吞掉这段需求。它不是『能挂闲鱼的商品』，是基础设施。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：无付费意向词、无『收费软件被阉割』的对应物（audit_notes 第 4/6 条），33,420★ 是开发者声望而非买家信号。做它等于给开源社区免费贡献。</div>
+<ul>
+<li>只能作为『Go 团队落地咨询/培训』的引流素材，不作为产品</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2887084076" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -251,7 +259,16 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2881916342" target="_blank" rel="noopener">回答 2881916342（72 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">观察位 · 暂不投入</div>
+<div><b>可行性：</b>替代 IDM/迅雷的全协议下载器，27,543★，多协议 + BT + 三端 GUI 工程量巨大，单人做不出差异；带广告的付费下载器在 2026 年已不是主流付费痛点，需求被浏览器与网盘内置下载吃掉。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：属第 4 条『替代』类，但替代对象本身免费+广告即可用，缺少『被阉割到卡住关键场景』的付费截面；27,543★ 已充分占位。独立产品不成立，仅作组件有残余价值。</div>
+<ul>
+<li>只有当能指认一个『免费版限速/下不了』的具体付费场景时才重估</li>
+<li>可作为某个交付物（如某平台批量归档工具）的内嵌组件，而非独立售卖</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 03 · 游戏/图形 · 星数已核实 · ★ 今日重点</div>
@@ -281,7 +298,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2028164396354913683" target="_blank" rel="noopener">回答 2028164396354913683（430 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>开源相控阵 20 公里探测雷达，个人既无射频硬件能力也无生产/校准条件，成品涉及无线电发射与出口管制合规，不存在合法单人交付路径。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：纯技术展示型项目，无付费主体、无合法交付路径，硬件+合规双重不可行（第 6 条『星数高≠赚钱』的极端样本）。27,344★ 只反映传播度。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 04 · 开发工具/构建 · 星数已核实 · ★ 今日重点</div>
@@ -311,7 +333,15 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2911456201" target="_blank" rel="noopener">回答 2911456201（745 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>eBPF 无侵入抓包，技术门槛极高，使用场景是安全研究与取证；国内分发还要面对合规与杀软拦截。不是单人 7 天能出的东西，也没有 C 端付费场景。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：技术上不可复制（重技术+合规风险），商业上无付费截面，属『看得懂也用不上』的知识型项目。</div>
+<ul>
+<li>仅在企业安全服务外包语境下有意义，与本自动化目标不符</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 05 · Web/前端 · 星数已核实 · ★ 今日重点</div>
@@ -341,7 +371,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/1909016656681894915" target="_blank" rel="noopener">回答 1909016656681894915（20 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>开源白板，正面对撞 Excalidraw / tldraw / Miro 免费层，以及飞书/钉钉内置白板。白板是『用的人多、付的人少』的典型，个人版几乎不可能收费，团队版要跟大厂抢预算。15,039★ 就是赛道充分竞争的证据。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：红海 + 免费替代充分，无『阉割缺口』；白板类获客依赖口碑与生态，单人无预算起不来（第 4/6 条）。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 06 · 其他/无法归类 · 今日新发现/星数待核实 · ★ 今日重点</div>
@@ -366,7 +401,12 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：收费、订阅</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>实际 97,165★（2026-11-22 GitHub API 核实，比昨日又涨 56 星，仍在日更）。PDF 全家桶已被它免费做完，paperless-ngx 48,034★、OCRmyPDF 35,295★、pdfarranger 6,041★ 层层占位，在线版与本地部署门槛都低。没有『免费版卡在关键场景』的付费截面可切。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：星数核实 97,165★，属 audit_notes 第 3 条『隐私/离线已成标配话术』的正面案例——赛道被 9.7 万星免费项目封死。今日快照又出现『收费/订阅』意向词，但那指的是它要替代的商业 PDF 软件，不是它自身的付费意向（第 2 条），不能当需求证据。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2100882342357233666" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -397,7 +437,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2874946209" target="_blank" rel="noopener">回答 2874946209（5384 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>构建工具，用户是 C/C++ 开发者，替代 CMake 的痛点真实，但替代品完全免费且已成熟（12,292★ + 长期维护）；付费只存在于企业级支持合同，个人接不到。时间成本极高、获客为零。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：典型『星数高≠赚钱』（第 6 条）。机器基线给的 64.6 分只反映热度，不反映可交易性。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 08 · AI/大模型 · 星数已核实 · ★ 今日重点</div>
@@ -427,7 +472,17 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2075000558503605303" target="_blank" rel="noopener">回答 2075000558503605303（5 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">观察位 · 暂不投入</div>
+<div><b>可行性：</b>AI 数据标注工具，真实买家是算法团队/标注外包公司，愿意为『批量预标注 + 格式导出 + 私有部署』付费——是本自动化认可的第 2 类缺口（在线工具做不了的本地批处理）。可在其上做行业化封装（医疗/工业质检标注流程），2–4 周可出最小版本，但付费点必须落在流程与交付，而非工具本身。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：是焦点里唯一同时具备『明确 B 端买家 + 本地批处理硬缺口 + 可二开』的项目；但工具免费且已有 10,923★，直接卖工具无空间，须先锁定一个垂直行业，故仍是观察位而非 go。</div>
+<ul>
+<li>先找到 1 家具名意向的标注外包/算法团队，确认愿意为定制流程付 3000+ 元</li>
+<li>产品定义成『某垂直行业标注流水线』，而非又一个标注工具</li>
+<li>确认许可证允许商用二开与闭源分发</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 09 · 其他/无法归类 · 今日新发现/星数待核实 · ★ 今日重点</div>
@@ -452,7 +507,15 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：订阅</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>今日唯一真正的新面孔，核实后只有 26★（2026-11-22 GitHub API），是一个『AI agent skill』形态的 on-page SEO 审计脚本，MIT，最后一次推送 2026-08-07（已停更 3 个多月）。它本身不是产品，只是一段给 AI agent 用的检查清单，谈不上可交付、可收费。</div>
+<div style="margin-top:6px"><b>理由：</b>星数待核实 → 已核实仅 26★，属『星数待核实就不判 go』的典型：271 赞同的原文是一篇 Web 出海个人经历贴，里面出现的『订阅』说的是作者自己 App 的订阅收入，不是对 SEO 工具的购买意向（意向词误报，第 2 条）。26★ + 停更 + 无买家主体，不投入。</div>
+<ul>
+<li>若要做 SEO 审计，只能自己重写产品并锚定『某平台卖家合规整改』这类具体买家，与本项目无关</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2064488042912552707" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -478,7 +541,16 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：收费、订阅</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">观察位 · 暂不投入</div>
+<div><b>可行性：</b>实际 14,447★（2026-11-22 核实，比昨日 +746，日内仍在提交），Python 单栈，是下载器里工程门槛最低、最容易被二开的一个。但下载器整体无付费截面（参见 gopeed），唯一残余价值是被嵌进某个具体交付物。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：星数待核实 → 已核实 14,447★。作为独立产品不成立（免费替代充分），只作组件有意义，故观察位；不因它出现在答案里就判 go（第 3 条特别约束）。</div>
+<ul>
+<li>仅当已有明确的『批量归档某平台内容』付费需求时才复用</li>
+<li>先确认目标站点合规边界，避免做成侵权工具</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2100882342357233666" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -504,7 +576,16 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：收费、订阅</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">观察位 · 暂不投入</div>
+<div><b>可行性：</b>实际 4,376★（2026-11-22 核实），跨设备屏幕/剪贴板/通知/键鼠共享，正面撞 LocalSend 近 10 万星、Windows 自带『手机连接』以及各类 KVM 软件；多端 + 网络穿透工程复杂度高，单人维护成本大。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：星数核实 4,376★，赛道被十万星级免费方案与系统内置功能双重挤压，无双端付费截面。列观察位仅因为『企业内网无外网、需跨设备协同』是真实缺口，但需另找买家。</div>
+<ul>
+<li>只在『企业内网无外网、需跨设备协同』这一具体场景下重估</li>
+<li>需先验证该场景是否已有采购预算</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2100882342357233666" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -530,7 +611,12 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：收费、订阅</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>实际 63,479★（2026-11-22 核实），PowerShell 脚本，功能会被 Windows 更新反复覆盖；用户对『清理预装 + 关遥测』的心理价位接近 0，付费意愿极低，且付费版会被立刻复制。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：星数核实 63,479★，属『高星但零变现』典型（第 6 条）；今日快照仍给『收费/订阅』意向词，那是它替代的商业清理软件，不是它自身的付费信号（第 2 条）。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2100882342357233666" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -556,7 +642,12 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：收费、订阅</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>实际 7,328★（2026-11-22 核实），终端视频下载器，直接落在版权灰区，国内分发会面对下架与投诉；用户对付费下载工具心理价位极低；最近一次推送仍是 2026-07-17，已 4 个月无更新，维护动能不足。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：星数核实 7,328★。合规风险高 + 无付费意愿 + 上游停更，三重不可投入；不能因为『付费意向词』就当作机会（第 2 条）。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2100882342357233666" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -582,7 +673,15 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：付费</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>实际 4,547★（2026-11-22 核实），Kotlin/AGPL-3.0，安卓知乎第三方客户端，主打去广告、砍掉盐选、150MB → 3.5MB。技术上是能跑通的（作者已维护到日更），但商业上它是『绕开平台付费墙与广告』，等于直接损害知乎的收入，分发与盈利都会撞上平台法务与下架；AGPL 也限制闭源收费。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入：它的『付费』意向词指的是知乎盐选付费内容，不是用户愿意为这个客户端付钱（意向词误报，第 2 条）。本质是替代品里最危险的一类——替代对象是平台自身的付费机制，合规红线明确，无法作为可售卖产品（C 方向已被审计推翻，第 1 条）。</div>
+<ul>
+<li>只能作为个人使用/学习素材；任何商业化（含二次分发、内置捐赠）都会放大下架与法律风险</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2040302545831212191" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -608,7 +707,12 @@ footer p{margin:5px 0}
 <li>⚠ 今日 CLI 回答未提及（来自已核实知识库基线）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>PostgreSQL 发行版/运维套件，买家是需要 DBA 能力的中大型企业，采购周期以季度计，个人无法交付 SLA。属重资产 + 重服务，与『7 天挂闲鱼』的节奏完全不匹配。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：方向属 D 类（重资产）的软件版，需求真实但成交靠企业销售（第 6 条）。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 16 · 其他/无法归类 · 今日新发现/星数待核实</div>
@@ -633,7 +737,12 @@ footer p{margin:5px 0}
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>微软官方工具集，实际约 14.1 万★（11-21 已核实，今日快照仍未核实星数）。它本身就是『免费且官方维护』的终点，不存在被阉割的付费版可替代，在其上二开也没有分发与收费空间。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：星数已核实逾 14 万★，官方免费项目——既不能替代（无付费缺口），也不能二开变现，微软还会持续吞掉同类功能。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2098034449007093667" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -694,7 +803,15 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2882398236" target="_blank" rel="noopener">回答 2882398236（320 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">观察位 · 暂不投入</div>
+<div><b>可行性：</b>简历模板站，需求真实但已被超级简历/职徒等免费+低价产品占满；模板边际成本为零、竞争靠 SEO 与投放，单人无预算打不动，4,110★ 说明供给已充分。可考虑的只剩『特定行业简历定制服务』（体制内/医疗），属服务不是产品。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：产品化路径被免费模板站封死，仅存定制服务这一窄切口，且需人力交付、不可规模化，故观察位。</div>
+<ul>
+<li>只在承接『行业简历定制 + 面试辅导』服务时使用，不做模板站</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 19 · AI/大模型 · 星数已核实</div>
@@ -724,7 +841,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2050723374603806381" target="_blank" rel="noopener">回答 2050723374603806381（112 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>RAG 文档解析，买家是企业 AI 团队，但这一层正被大模型厂商内置能力吞掉；3,944★ 的项目需持续跟进上游模型迭代，单人维护成本高且难收费。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：中间层被平台方吞并风险高，采购走企业集成商，非单人可变现。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 20 · 输入法/系统 · 星数已核实</div>
@@ -749,7 +871,12 @@ footer p{margin:5px 0}
 <li>⚠ 今日 CLI 回答未提及（来自已核实知识库基线）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>输入法，典型的『免费 + 情怀维护』品类，词库、云同步、多端适配都是无底洞，商业上被搜狗/微信输入法免费覆盖。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：赛道零付费空间且维护成本极高，『替代广告输入法』是情绪需求而非付费需求（第 2 条）。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 21 · 网络/协议 · 星数已核实</div>
@@ -779,7 +906,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/3579551717" target="_blank" rel="noopener">回答 3579551717（57 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>私有云盘，正面对撞 Nextcloud/Seafile/群晖，3,232★ 已被大量同类超越；私有云盘的真实付费在『企业部署 + 运维』，需团队与 SLA。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：红海 + 需团队交付，与 pigsty 同理属重服务型，不符合单人可投入标准。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 22 · AI/大模型 · 星数已核实</div>
@@ -809,7 +941,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/1947386119206474962" target="_blank" rel="noopener">回答 1947386119206474962（266 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>从零训练大模型的教程/工程，本质是学习型内容，商业价值在课程/咨询而非产品；训练成本与算力门槛对个人不友好。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：内容型项目，无产品化与付费截面，可作学习素材，不作投入标的。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 23 · 游戏/图形 · 星数已核实</div>
@@ -839,7 +976,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2031029378071704180" target="_blank" rel="noopener">回答 2031029378071704180（185 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>一句话生成 AI 世界，依赖大量 token 成本，商业化只能是『按次收费的在线服务』——正是本自动化明确不做的方向（在线服务被大厂免费覆盖），且创意类产品留存极差。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：成本结构（token）与留存（尝鲜即走）双重不利，且属在线服务而非本地批处理缺口。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 24 · 桌面/效率工具 · 星数已核实</div>
@@ -869,7 +1011,18 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/1993977819609448838" target="_blank" rel="noopener">回答 1993977819609448838（148 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh go"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">可投入</div>
+<div><b>可行性：</b>『纸笔礼簿 + 会上云的记账 App』是极具体的本地化刚需（婚丧嫁娶收礼场景），离线单机、无订阅，1,328★ 且原文 45 条评论说明有真实使用反馈；Windows 预编译直装，交付成本几乎为零，单人 1–2 周可做出方言/地区定制版。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 的 go（第 2 天）：与 PaperStudio 同属被验证的『替代被阉割/被订阅化的现有工具』路径，场景在中国县域市场极稳定、口碑传播强。但必须做成『地区/家族定制版 + 交付服务』，纯软件售卖会被免费版压死。</div>
+<ul>
+<li>本周内先做 1 个县的验证：找 2–3 位近期办过事的人，确认愿意为定制版付 200–500 元</li>
+<li>产品形态定为『定制版 + 远程/现场部署 200–500 元』</li>
+<li>礼簿涉及个人信息，明确本地存储不上传，避免合规争议</li>
+<li>若 7 天内拿不到 1 个付费意向，本项降为 watch（不无限期挂 go）</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 25 · 桌面/效率工具 · 星数已核实</div>
@@ -900,7 +1053,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2010504031798309205" target="_blank" rel="noopener">回答 2010504031798309205（158 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>语音输入，正面撞 Handy 38,456★、CapsWriter 7,109★ 等免费离线方案，系统级输入法集成（Windows/macOS 各一套）维护成本极高；快照 flags 已标『重资产/观察位』，998★ 不足以支撑独立商业化。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：C 方向已被审计推翻（红海 + 隐私成标配），竞品 3.8 万星免费，确认不投入。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 26 · 嵌入式/硬件 · 星数已核实</div>
@@ -931,7 +1089,15 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/1940731541534806826" target="_blank" rel="noopener">回答 1940731541534806826（685 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>复刻 AirTag 卖成品，属方向卡 D：毛利高（150 元成本 → 599 元）但需打样、烧录、备货、售后，重资产且周期 2–4 个月，不适合零基础起步；作者本人已在闲鱼卖成品，先发优势明确。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：D 方向已审计为『重资产、仅观察』，与作者自有渠道直接竞争，单人无供应链优势，不投入。</div>
+<ul>
+<li>若未来具备硬件供应链能力可再评估；当前不投入</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/1940731541534806826" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -962,7 +1128,19 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2026740256095913983" target="_blank" rel="noopener">回答 2026740256095913983（5024 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh go"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">可投入</div>
+<div><b>可行性：</b>已被验证的『商业软件阉割版补全』：BarTender SE 免费版故意不支持 Excel 绑定，而标签打印是仓储/门店/工厂的日常刚需，买家明确、决策链短、可按单收费。PaperStudio 659★ 已完成产品验证，2–4 周可做行业化版本（按 SKU 批量导标签、Excel/ERP 字段映射）。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 的 go（第 2 天）：本日仍是最符合投入标准的项目——需求来自『厂商主动设计的残废』而非推广文，付费主体是企业，且有 659★ 开源实现可二开（不必逆向商业软件）。机会在『某细分行业标签流水线 + 交付』，不在再做一个标签工具。</div>
+<ul>
+<li>先锁定 1 个细分行业（电商仓储/生鲜门店），确认其 Excel/ERP 字段结构与现有痛点</li>
+<li>定价 300–500 元/套起，含一次部署与字段映射配置</li>
+<li>以 PaperStudio 二开为主，不做 BarTender 逆向</li>
+<li>上架前先在闲鱼/淘宝搜同类，用『想要人数』校准需求真伪</li>
+<li>若 7 天内拿不到 1 个付费意向，本项降为 watch</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 28 · Web/前端 · 星数已核实</div>
@@ -992,7 +1170,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/3238479728" target="_blank" rel="noopener">回答 3238479728（176 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>低代码页面搭建，正面对撞 v0/Lovable 与各类 AI 建站，该赛道 2026 年已被大模型产品重构；586★ 无壁垒，单人做不出差异、获客成本极高。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：赛道正被生成式产品重写，586★ 规模无壁垒，不投入。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 </section>
 <section><h2><span class="num">5</span>已审计的四个方向（基线，不随每日波动）</h2>
@@ -1076,11 +1259,14 @@ footer p{margin:5px 0}
 <li>星数高 ≠ 赚钱；一年才等到第一个付费用户是真实存在的情况</li>
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
-<div class="card">本日未进行 DSH 复核（GUI 会话未在线或复核层尚未启用）。以上项目均为<b>机器基线 + 待 DSH 判定</b>，不含可行性与投入建议，请勿直接当作决策依据。</div>
+<div class="card good">
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-22T08:49:52 · DSH 会话基于当日快照人工判断</p>
+<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+</div>
 </section>
 <footer>
 <p><b>免责声明</b>：本报告仅作自动化研究与信息整理，不构成投资、副业、创业或任何商业决策建议；数据为平台公开指标的瞬时快照，可能随时间变化，且不保证完整准确。</p>
-<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>机器判定（本日未复核）</b>。</p>
+<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>已复核</b>。</p>
 <p>数据日期 2026-11-22 · 生成于 2026-11-22T08:30:41 · 数据源 知乎 · 低频调用、不绕过平台风控。</p>
 </footer>
 </div></body></html>
