@@ -141,7 +141,7 @@ footer p{margin:5px 0}
 <div class="meta-item">信号数 · <b>95</b></div>
 <div class="meta-item">具体项目 · <b>28</b></div>
 <div class="meta-item">趋势快照 · <b>11 天</b></div>
-<div class="meta-item">已判定项目 · <b>27</b></div>
+<div class="meta-item">已判定项目 · <b>28</b></div>
 <div class="meta-item">生成 · <b>2026-11-22T08:30:41</b></div>
 </div></div></header><div class="wrap">
 <section><h2><span class="num">1</span>数据概览</h2>
@@ -151,7 +151,7 @@ footer p{margin:5px 0}
 <div class="stat"><div class="v">3</div><div class="l">真需求</div></div>
 <div class="stat"><div class="v">2</div><div class="l">仅热度</div></div>
 <div class="stat"><div class="v">2</div><div class="l">无法确认</div></div>
-<div class="stat"><div class="v">27</div><div class="l">已判定项目</div></div>
+<div class="stat"><div class="v">28</div><div class="l">已判定项目</div></div>
 </div>
 <div class="card warn"><h3 style="margin-top:0">⚠️ 先看这个：数据口径与局限</h3><p style="margin-bottom:0">本报告只回答两件事：<b>今天有哪些具体方向/项目值得看</b>，以及<b>它们的需求是不是真的</b>。CLI 的 <code>*_7_days</code> 与 <code>pv_incr_rate</code> 实测全为 0，趋势由本地逐日快照差分得出；满 7 天前不判定持续需求。今日快照第 <b>11</b> 天。「是否可以投入」由 DSH 判定层给出，未判定时明确显示「待 DSH 判定」。</p></div>
 </section>
@@ -773,7 +773,12 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/3242193598" target="_blank" rel="noopener">回答 3242193598（217 赞同）</a> · 
 </div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>Anki 记忆算法插件，受众是极小众的间隔重复重度用户，Anki 主体与插件生态全免费，没有可售卖载体；工程上只是算法实现，做出来也是免费贡献。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 11-21 判定：受众极窄 + 宿主免费 + 无付费习惯；4,128★ 是算法圈关注度，不是买家。</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:50:38 · DSH 会话基于当日快照</div>
+</div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
 <div class="dir-rank">项目 18 · Web/前端 · 星数已核实</div>
@@ -1260,8 +1265,16 @@ footer p{margin:5px 0}
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
 <div class="card good">
-<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-22T08:49:52 · DSH 会话基于当日快照人工判断</p>
-<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-22T08:51:01 · DSH 会话基于当日快照人工判断</p>
+<p>今日 28 个项目全部判定：go 2 个、watch 5 个、no 21 个。可投的仍然只有 PaperStudio（BarTender SE 阉割版补全）与 gift-book（电子礼簿）两个低星但切口具体的项目，且都进入第 2 天、带 7 天降级条款。今天两个新面孔都不成立：onpage-seo-audit 核实只有 26★ 且已停更 3 个月，zhihu-plus-plus 4,547★ 但做的是绕开知乎盐选付费墙，属合规红线。</p>
+<ul class="pts">
+<li>机器基线今日失去区分度：前 5 名并列 65.0 分、其后 6 个并列 55.0 分，Top8 无一可投；说明 A 段打分已无法用于排序，需加时间衰减或按『是否有付费截面』做硬过滤，否则 B 段每天要重判同一批高星项目。</li>
+<li>7 个标「星数未核实」的项目已全部用 GitHub API 核实：Stirling-PDF 97,165★、Win11Debloat 63,479★、Ghost-Downloader-3 14,447★、yoinks 7,328★、zhihu-plus-plus 4,547★、TwinDesk 4,376★、onpage-seo-audit 26★。同一批项目连续两天以「今日新发现」重复出现且仍标未核实，是 A 段缺一次 API 回填，不是真的有新机会。</li>
+<li>意向词误报今天又添两例：onpage-seo-audit 的「订阅」指原文作者自己 App 的订阅收入；zhihu-plus-plus 的「付费」指知乎盐选付费内容——恰恰是它要绕开的东西。按 audit_notes 第 2 条，两者都不作需求证据。</li>
+<li>go 的两个项目新增降级条款：7 天内拿不到 1 个付费意向即降为 watch，避免长期挂着 go 变成账面繁荣；条件里已写明先做县域/细分行业验证，不先写代码。</li>
+<li>C 方向（离线/隐私替代）今日第四次被证伪：Stirling-PDF、vocotype、输入法、白板、下载器全部 no，赛道被 4.8 万星 Umi-OCR、9.7 万星 Stirling-PDF 等免费项目封死，隐私已无溢价。</li>
+<li>新增合规红线样本 zhihu-plus-plus：技术可做、4,547★ 有真实用户，但产品本质是替平台用户绕过付费与广告，分发与收费都会撞法务。建议 A 段加一个硬过滤字段「是否绕开平台收费/广告」，这类项目直接不进候选池。</li>
+</ul>
 </div>
 </section>
 <footer>
