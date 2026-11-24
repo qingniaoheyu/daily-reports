@@ -133,7 +133,7 @@ footer p{margin:5px 0}
 </style></head><body>
 <header><div class="wrap">
 <div class="eyebrow">MONEY RADAR / DAILY · PROJECT LEVEL</div>
-<h1>每日赚钱热点确认说明 <span class="badge-mode">机器判定 · 本日未复核</span></h1>
+<h1>每日赚钱热点确认说明 <span class="badge-mode reviewed">DSH 已复核</span></h1>
 <div class="sub">落到具体项目层级：用 CLI 真实指标量化需求，逐日差分判断持续度，从回答正文找付费意向；机器只给可核查基线，可行性与是否可投入由 DSH 判定。</div>
 <div class="meta-row">
 <div class="meta-item">日期 · <b>2026-11-24</b></div>
@@ -141,7 +141,7 @@ footer p{margin:5px 0}
 <div class="meta-item">信号数 · <b>100</b></div>
 <div class="meta-item">具体项目 · <b>34</b></div>
 <div class="meta-item">趋势快照 · <b>13 天</b></div>
-<div class="meta-item">已判定项目 · <b>32</b></div>
+<div class="meta-item">已判定项目 · <b>34</b></div>
 <div class="meta-item">生成 · <b>2026-11-24T08:30:53</b></div>
 </div></div></header><div class="wrap">
 <section><h2><span class="num">1</span>数据概览</h2>
@@ -151,7 +151,7 @@ footer p{margin:5px 0}
 <div class="stat"><div class="v">2</div><div class="l">真需求</div></div>
 <div class="stat"><div class="v">5</div><div class="l">仅热度</div></div>
 <div class="stat"><div class="v">2</div><div class="l">无法确认</div></div>
-<div class="stat"><div class="v">32</div><div class="l">已判定项目</div></div>
+<div class="stat"><div class="v">34</div><div class="l">已判定项目</div></div>
 </div>
 <div class="card warn"><h3 style="margin-top:0">⚠️ 先看这个：数据口径与局限</h3><p style="margin-bottom:0">本报告只回答两件事：<b>今天有哪些具体方向/项目值得看</b>，以及<b>它们的需求是不是真的</b>。CLI 的 <code>*_7_days</code> 与 <code>pv_incr_rate</code> 实测全为 0，趋势由本地逐日快照差分得出；满 7 天前不判定持续需求。今日快照第 <b>13</b> 天。「是否可以投入」由 DSH 判定层给出，未判定时明确显示「待 DSH 判定」。</p></div>
 </section>
@@ -193,8 +193,8 @@ footer p{margin:5px 0}
 <div class="stats">
 <div class="stat"><div class="v">2</div><div class="l">今日首次出现</div></div>
 <div class="stat"><div class="v">32</div><div class="l">存量项目（只记增量）</div></div>
-<div class="stat"><div class="v">32</div><div class="l">已有 DSH 判定（含承继）</div></div>
-<div class="stat"><div class="v">2</div><div class="l">待 DSH 判定</div></div>
+<div class="stat"><div class="v">34</div><div class="l">已有 DSH 判定（含承继）</div></div>
+<div class="stat"><div class="v">0</div><div class="l">待 DSH 判定</div></div>
 </div>
 <h3>今日首次出现（2）</h3>
 <div class="dir"><div class="dir-head"><div>
@@ -220,7 +220,16 @@ footer p{margin:5px 0}
 <li>✅ 来源：GitHub 趋势（近 3 周新起量仓库，非知乎信号）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>568★（2026-11-24 API 核实），MIT，Rust/GPUI，Windows 11 + macOS(beta)，2026-11-07 建仓（17 天），148 个 open issue、41 fork，官网 rustyfiles.com，作者挂 Buy me a coffee，README 自述『无账号、无广告、不上传』。核心功能（列表/缩略图/复制跑在窗口线程之外、双栏、压缩包当目录、空格预览）单人 2–3 周能出，但文件管理器的真实成本在长尾：Shell 扩展、网络盘、权限、右键菜单、驱动级缩略图，以及 148 个 issue 的持续维护。竞品：Windows 资源管理器（随系统）、Files（开源社区活跃）、Everything（搜索）、Total Commander / XYplorer / Directory Opus（收费 30–90 美元，护城河是脚本/FTP/同步/批量重命名）。技术可行、工程不可持续。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①缺口位置不对：它是『把 Explorer 做快』的免费替代，不是『补全被阉割的商业软件』——收费的 Directory Opus / XYplorer 卖的是脚本、FTP、同步、批量重命名这些长尾能力，恰恰是单人最难持续跟的部分，而中文区买家只在论坛级规模（audit_notes 第 4/6 条）。②付费载体为零：MIT + 完全免费 + 无账号体系 + 作者只收打赏，你二开也没有收费入口，做出来就是又一份免费贡献。③维护面：148 个 open issue 且是 GUI/系统集成类，单人接不住。④17 天 568★ 属发布期传播（HN/Reddit 类曝光），无任何付费意向证据（flags 已标），符合第 6 条『星数高≠赚钱』与第 3 条『系统自带功能覆盖区』。</div>
+<ul>
+<li>只能作为『本地批量整理/归档』具体交付物的内嵌组件（如按规则批量改名、按项目自动归类素材），不做通用文件管理器</li>
+<li>若真要碰这一块，先确认某个垂直场景（摄影素材归档、工程图纸整理）里有付费主体，而不是做 Explorer 替代品</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-24T08:49:41 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/gelenmedya/rustyfiles" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -246,7 +255,16 @@ footer p{margin:5px 0}
 <li>✅ 来源：GitHub 趋势（近 3 周新起量仓库，非知乎信号）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>503★（2026-11-24 API 核实），Apache-2.0，TypeScript/Electron，2026-11-21 建仓（3 天），71 fork、8 open issue，官网 pibot.space + 文档站，中文/日文 README，已出 macOS/Win/Linux 桌面端 + Android + relay + runner + ACP，内核是第三方 pi agent。工程上是多端壳 + 策略引擎 + 沙箱（anthropic sandbox-runtime）+ 审批与审计日志 + 定时例程，MVP 单人能做，但四端加移动端加自托管 relay 的长期维护量远超单人。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①赛道由模型厂商定义：Claude/ChatGPT/Cursor 桌面端已内置 computer use、审批与本地文件读写，用户付费买的是模型订阅，壳层被免费赠送——这层『多 Agent 桌面』正在被上游吞掉（第 6 条）。②无抽成截面：主打 Ollama/OpenRouter/自有 key，token 收入不在你手里，工具本身又免费，Apache-2.0 虽允许闭源，但『可闭源』不等于『有人买』。③3 天 503★ + 71 fork 是发布传播，无付费意向词（flags 已标），与昨日 KKKKhazix/agent-autoloop 同一模式。④维护面：4 平台 + relay + 插件生态 + 每周变化的模型/工具协议，属持续运维型重活，不是 7 天内能交付的商品。</div>
+<ul>
+<li>只能当『某个垂直流程的 Agent 封装』底座（固定格式报表、发票/合同整理），卖流程与交付，不卖这个壳</li>
+<li>若要做，先拿到 1 家愿为『本地跑 + 审批留痕 + 审计日志』付年费的企业客户（合规/审计场景），否则不投入</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-24T08:49:41 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/w01fb0ss/PiBot" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <h3>存量项目 · 只记增量（32）</h3>
@@ -311,12 +329,12 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">不建议投入</div>
-<div><b>可行性：</b>2,127★，AGPL-3.0，仓库 113MB，12 个 release 资产，2026-11-10 建仓。已有官网 mroffice.ai、npm 包 mroffice-embed、Embed / MCP / Sign in with MR Office 开发者页——上游自己就在做商业化（云端 freemium + 嵌入 SDK）。『最接近 MS Office 的浏览器套件』是十年量级的 OOXML 保真工程，docx/xlsx/pptx/pdf 四端保真单人无法维护，OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。</div>
-<div style="margin-top:6px"><b>理由：</b>不投入。①它不是『被阉割的免费版』，而是上游已商业化的产品：可切缺口不存在，你只能买它的 SDK 或跟它抢客户（无胜算）；②AGPL-3.0 让闭源二开与再分发不成立，商用要开源全部代码；③13 天 2,127★ 更像产品发布传播，不是买家证据（机器基线 44.2，无付费意向词）。属第 4 条的反面样本：缺口由厂商用 SDK 自己收钱，没有留给第三方的位置。</div>
+<div><b>可行性：</b>2,783★（今日 +670，API 核实），AGPL-3.0，2026-11-10 建仓，仓库 113MB、12 个 release 资产；官网 mroffice.ai、npm 包 mroffice-embed、Embed / MCP / Sign in with MR Office 开发者页——上游自己就在做商业化（云端 freemium + 嵌入 SDK）。OOXML 四端（docx/xlsx/pptx/pdf）保真是十年量级工程，单人无法维护，OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。今日星数加速不改变工程判断。</div>
+<div style="margin-top:6px"><b>理由：</b>维持不投入（第 2 次复核）。+670★/日 是趋势源发现后的集中曝光曲线，不是买家信号；①缺口不存在：上游已用 SDK 自己收钱，第三方只能买它的 SDK 或跟它抢客户；②AGPL-3.0 阻断闭源二开与再分发；③四端保真单人做不了。星数加速反而说明上游在抢心智，越晚进入越没有位置——属第 4 条的反面样本（缺口由厂商自己变现，没给第三方留位）。</div>
 <ul>
 <li>唯一残留是在自有系统里嵌『只读预览 xlsx』这类极窄需求，那属于采购官方 SDK，不是可做的生意</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-23T08:50:03 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-24T08:49:41 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-23（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/XinaTian/MROffice" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
@@ -352,16 +370,16 @@ footer p{margin:5px 0}
 </div>
 <div class="dsh go"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">可投入</div>
-<div><b>可行性：</b>已被验证的『商业软件阉割版补全』：BarTender SE 免费版故意不支持 Excel 绑定，而标签打印是仓储/门店/工厂的日常刚需，买家明确、决策链短、可按单收费。PaperStudio 659★ 已完成产品验证，2–4 周可做行业化版本（按 SKU 批量导标签、Excel/ERP 字段映射）。</div>
-<div style="margin-top:6px"><b>理由：</b>维持 11-21 的 go（第 2 天）：本日仍是最符合投入标准的项目——需求来自『厂商主动设计的残废』而非推广文，付费主体是企业，且有 659★ 开源实现可二开（不必逆向商业软件）。机会在『某细分行业标签流水线 + 交付』，不在再做一个标签工具。</div>
+<div><b>可行性：</b>659★ 不变，5,024 赞同的原回答仍在，BarTender SE 免费版故意不支持 Excel 绑定的缺口未被填补。本轮机器基线由 56.3 回落到 41.3，cause 是『今日提及 -1』的热度衰减，不是需求侧变化——项目没有新增竞品，也没有出现『免费替代』。标签打印是仓储/门店/工厂的日常刚需，买家明确、决策链短、可按单收费；2–4 周可做行业化版本（按 SKU 批量导标签、Excel/ERP 字段映射）。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 go（第 3 天）。基线回落只反映『今天没人再提它』，不构成需求反转；该方向仍是 audit_notes 第 4/5 条最标准的样本：厂商主动设计的残废 + 企业买家 + 可按单收费，且有 659★ 开源实现可二开（不必逆向商业软件）。唯一风险是验证一直没做，所以本次不延长窗口：7 天内拿不到 1 个付费意向即降 watch，不再无限期挂 go。</div>
 <ul>
 <li>先锁定 1 个细分行业（电商仓储/生鲜门店），确认其 Excel/ERP 字段结构与现有痛点</li>
 <li>定价 300–500 元/套起，含一次部署与字段映射配置</li>
 <li>以 PaperStudio 二开为主，不做 BarTender 逆向</li>
 <li>上架前先在闲鱼/淘宝搜同类，用『想要人数』校准需求真伪</li>
-<li>若 7 天内拿不到 1 个付费意向，本项降为 watch</li>
+<li>热度衰减不影响结论，但验证不能拖：7 天内拿不到 1 个付费意向即降 watch</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-22T08:49:52 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-24T08:49:41 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-23（存量项目以首次/上次判定为准，不重复判定）</div>
 </div></div>
@@ -447,11 +465,14 @@ footer p{margin:5px 0}
 <li>星数高 ≠ 赚钱；一年才等到第一个付费用户是真实存在的情况</li>
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
-<div class="card">本日未进行 DSH 复核（GUI 会话未在线或复核层尚未启用）。以上项目均为<b>机器基线 + 待 DSH 判定</b>，不含可行性与投入建议，请勿直接当作决策依据。</div>
+<div class="card good">
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-24T08:49:41 · DSH 会话基于当日快照人工判断</p>
+<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+</div>
 </section>
 <footer>
 <p><b>免责声明</b>：本报告仅作自动化研究与信息整理，不构成投资、副业、创业或任何商业决策建议；数据为平台公开指标的瞬时快照，可能随时间变化，且不保证完整准确。</p>
-<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>机器判定（本日未复核）</b>。</p>
+<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>已复核</b>。</p>
 <p>数据日期 2026-11-24 · 生成于 2026-11-24T08:30:53 · 数据源 知乎 / GitHub 趋势 · 低频调用、不绕过平台风控。</p>
 </footer>
 </div></body></html>
