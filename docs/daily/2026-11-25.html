@@ -133,7 +133,7 @@ footer p{margin:5px 0}
 </style></head><body>
 <header><div class="wrap">
 <div class="eyebrow">MONEY RADAR / DAILY · PROJECT LEVEL</div>
-<h1>每日赚钱热点确认说明 <span class="badge-mode">机器判定 · 本日未复核</span></h1>
+<h1>每日赚钱热点确认说明 <span class="badge-mode reviewed">DSH 已复核</span></h1>
 <div class="sub">落到具体项目层级：用 CLI 真实指标量化需求，逐日差分判断持续度，从回答正文找付费意向；机器只给可核查基线，可行性与是否可投入由 DSH 判定。</div>
 <div class="meta-row">
 <div class="meta-item">日期 · <b>2026-11-25</b></div>
@@ -141,7 +141,7 @@ footer p{margin:5px 0}
 <div class="meta-item">信号数 · <b>101</b></div>
 <div class="meta-item">具体项目 · <b>29</b></div>
 <div class="meta-item">趋势快照 · <b>14 天</b></div>
-<div class="meta-item">已判定项目 · <b>27</b></div>
+<div class="meta-item">已判定项目 · <b>29</b></div>
 <div class="meta-item">生成 · <b>2026-11-25T08:30:54</b></div>
 </div></div></header><div class="wrap">
 <section><h2><span class="num">1</span>数据概览</h2>
@@ -151,7 +151,7 @@ footer p{margin:5px 0}
 <div class="stat"><div class="v">2</div><div class="l">真需求</div></div>
 <div class="stat"><div class="v">6</div><div class="l">仅热度</div></div>
 <div class="stat"><div class="v">2</div><div class="l">无法确认</div></div>
-<div class="stat"><div class="v">27</div><div class="l">已判定项目</div></div>
+<div class="stat"><div class="v">29</div><div class="l">已判定项目</div></div>
 </div>
 <div class="card warn"><h3 style="margin-top:0">⚠️ 先看这个：数据口径与局限</h3><p style="margin-bottom:0">本报告只回答两件事：<b>今天有哪些具体方向/项目值得看</b>，以及<b>它们的需求是不是真的</b>。CLI 的 <code>*_7_days</code> 与 <code>pv_incr_rate</code> 实测全为 0，趋势由本地逐日快照差分得出；满 7 天前不判定持续需求。今日快照第 <b>14</b> 天。「是否可以投入」由 DSH 判定层给出，未判定时明确显示「待 DSH 判定」。</p></div>
 </section>
@@ -197,8 +197,8 @@ footer p{margin:5px 0}
 <div class="stats">
 <div class="stat"><div class="v">2</div><div class="l">今日首次出现</div></div>
 <div class="stat"><div class="v">27</div><div class="l">存量项目（只记增量）</div></div>
-<div class="stat"><div class="v">27</div><div class="l">已有 DSH 判定（含承继）</div></div>
-<div class="stat"><div class="v">2</div><div class="l">待 DSH 判定</div></div>
+<div class="stat"><div class="v">29</div><div class="l">已有 DSH 判定（含承继）</div></div>
+<div class="stat"><div class="v">0</div><div class="l">待 DSH 判定</div></div>
 </div>
 <h3>今日首次出现（2）</h3>
 <div class="dir"><div class="dir-head"><div>
@@ -225,7 +225,17 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：付费、订阅</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>知乎侧只有 1 条回答（257 赞同，意图查询「一个人能做出什么开源项目」），挂的是 Codespaces 演示仓：9★、22KB、Dockerfile/Shell、2026-08-25 建仓（本次 API 补核，原快照星数待核实已补上）。真正的项目是 ayaka-notes/ayakaleaf-pro：1,837★、143 fork、AGPL-3.0、270MB、2026-01-22 建仓、11-24 仍在推送，定位是『Overleaf CE 的免费自托管替代 + 自研 Pro 平价功能（SSO、Git 同步、跟踪修订、AI、Zotero、Mendeley）』。技术难点不在编辑器 UI，而在 LaTeX 编译沙箱（TeXLive Full 镜像、容器隔离、并发编译队列）、文件存储、实时协作与长期运维；一人能跑 demo，要对外提供就是机房、带宽、备案、内容合规的运营活。竞品：Overleaf 官方（个人订阅约 $200/年、学生有免费额度）、TeXPage（国内商业订阅，已在做同一件事）、本地 TeXLive + VS Code/LaTeX Workshop，以及 Ayakaleaf 自身的免费自托管版。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①付费载体被作者自己免费化：项目卖点就是『不付 Overleaf 的钱』，AGPL + 一键自托管 + drop-in replacement，你再卖同一套东西等于卖『不要钱』；②真正的成本在托管与运维（编译机器、带宽、备案、侵权与内容合规），属重资产 D 类，单人没有规模效应；③买家是学生/高校，国内付费习惯最弱的一档，Overleaf 免费额度 + 淘宝共享账号已覆盖；④链接仓 9★、知乎 257 赞同，星数与热度都撑不起付费面，且『付费/订阅』两个词出自作者吐槽 Overleaf 贵，不是买你的东西（第 3/6 条）。</div>
+<ul>
+<li>只考虑给高校/研究所做『内网私有化部署 Overleaf CE/Ayakaleaf + 中文化模板 + SSO/备份』的交付服务（3000–20000 元/项目），那是 IT 服务生意，不是开平台</li>
+<li>不卖在线 SaaS：编译集群 + 备案 + 内容合规是持续成本，单人接不住</li>
+<li>若走部署服务，先拿到 1 家院系/实验室的内网需求与预算科目，再动手</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2076438547259830913" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -251,7 +261,16 @@ footer p{margin:5px 0}
 <li>✅ 来源：GitHub 趋势（近 3 周新起量仓库，非知乎信号）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>572★（2026-11-25 API 核实，快照记 554★），MIT，Rust + Slint，13.7MB，Windows only，2026-11-23 21:30 建仓且唯一一次 push 就在建仓同一分钟，0 fork / 0 open issue，README 已挂 v4.0.3 与 libvlc 依赖，声称覆盖 Steam/GOG/Epic/itch/Xbox 的游戏发现、Unity/Unreal 引擎识别、跨游戏通用 mod 安装与更新。技术上『发现游戏 + 拷文件』可行；真正难的是 mod 源与兼容层（BepInEx/MelonLoader/UE4SS 的逐版本适配），这是逐个游戏的长尾地狱，而且需要 mod 托管与分发基础设施。竞品：Vortex（Nexus 官方，免费 + Premium 变现）、Mod Organizer 2、r2modman/Thunderstore、CurseForge、Wabbajack、Steam Workshop。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①星数不作证据：2 天 572★ 而 fork=0、issue=0、只有建仓那一次 push，是典型的刷星/发布传播形态，实际采用度为 0（第 6 条『星数高≠赚钱』，这里连星数都不可信）；②缺口不在『管理器』而在『mod 目录 + 兼容层 + 分发』：Nexus/Thunderstore/CurseForge 靠托管与分成赚钱，管理器是它们的免费赠品，做一个没有 mod 源的壳没有交易价值；③合规与封号：向商业游戏注入文件、碰反作弊（EAC/BattlEye）与平台条款，做成收费品等于把风险转给买家；④无任何付费意向证据（纯趋势源，知乎 0 提及）。</div>
+<ul>
+<li>只有当『某一款具体游戏的 mod 一键安装 + 冲突修复』这种窄场景，且有社区愿为省掉手动折腾付 20–50 元时才重估</li>
+<li>不做通用管理器、不自建 mod 托管/分发（那是平台活）</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/Indigo-0167/universal-game-mod-manager" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <h3>存量项目 · 只记增量（27）</h3>
@@ -317,16 +336,16 @@ footer p{margin:5px 0}
 </div>
 <div class="dsh go"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">可投入</div>
-<div><b>可行性：</b>659★ 不变，5,024 赞同的原回答仍在，BarTender SE 免费版故意不支持 Excel 绑定的缺口未被填补。本轮机器基线由 56.3 回落到 41.3，cause 是『今日提及 -1』的热度衰减，不是需求侧变化——项目没有新增竞品，也没有出现『免费替代』。标签打印是仓储/门店/工厂的日常刚需，买家明确、决策链短、可按单收费；2–4 周可做行业化版本（按 SKU 批量导标签、Excel/ERP 字段映射）。</div>
-<div style="margin-top:6px"><b>理由：</b>维持 go（第 3 天）。基线回落只反映『今天没人再提它』，不构成需求反转；该方向仍是 audit_notes 第 4/5 条最标准的样本：厂商主动设计的残废 + 企业买家 + 可按单收费，且有 659★ 开源实现可二开（不必逆向商业软件）。唯一风险是验证一直没做，所以本次不延长窗口：7 天内拿不到 1 个付费意向即降 watch，不再无限期挂 go。</div>
+<div><b>可行性：</b>659★ 不变，5,024 赞同的原回答仍在，BarTender SE 免费版不支持 Excel 绑定的缺口未变；基线 41.3→56.3（+15.0）是『今日提及 +1』的回摆，两天前刚好是 -15.0，同源反向——说明该指标只是知乎提及噪声，不是需求侧信号。无新增竞品、无免费替代出现。买家是仓储/门店/工厂，Excel/ERP 字段 → 标签 PDF 是日常刚需，2–4 周可做行业化版本。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 go（第 4 天），但今天必须把『判断』变成『动作』。前三天只有判定没有验证，基线在 41.3 与 56.3 之间来回摆，本身就证明『被提及』不等于『有人买』；窗口按原定 11-28（第 7 天）到期，届时拿不到 1 个付费意向即降 watch，不再续期。今天要出可展示的最小交付（Excel 字段映射 → 批量标签 PDF）并在闲鱼挂 1 条测『想要人数』，用询价而不是热度来决定去留（第 4/5 条最标准的样本，唯一风险是验证一直没做）。</div>
 <ul>
-<li>先锁定 1 个细分行业（电商仓储/生鲜门店），确认其 Excel/ERP 字段结构与现有痛点</li>
-<li>定价 300–500 元/套起，含一次部署与字段映射配置</li>
+<li>今天（11-25）完成『Excel 字段映射 → 批量标签 PDF』最小 demo，跑通 1 个真实 SKU 表</li>
+<li>今天在闲鱼/淘宝挂 1 条（300–500 元/套），记录想要人数与咨询内容，作为唯一判据</li>
+<li>锁定 1 个细分行业（电商仓储/生鲜门店），确认其 Excel/ERP 字段结构</li>
 <li>以 PaperStudio 二开为主，不做 BarTender 逆向</li>
-<li>上架前先在闲鱼/淘宝搜同类，用『想要人数』校准需求真伪</li>
-<li>热度衰减不影响结论，但验证不能拖：7 天内拿不到 1 个付费意向即降 watch</li>
+<li>11-28 前拿不到 1 个付费意向 → 自动降 watch，不再挂 go</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-24T08:49:41 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-24（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2026740256095913983" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
@@ -356,12 +375,12 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">不建议投入</div>
-<div><b>可行性：</b>2,783★（今日 +670，API 核实），AGPL-3.0，2026-11-10 建仓，仓库 113MB、12 个 release 资产；官网 mroffice.ai、npm 包 mroffice-embed、Embed / MCP / Sign in with MR Office 开发者页——上游自己就在做商业化（云端 freemium + 嵌入 SDK）。OOXML 四端（docx/xlsx/pptx/pdf）保真是十年量级工程，单人无法维护，OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。今日星数加速不改变工程判断。</div>
-<div style="margin-top:6px"><b>理由：</b>维持不投入（第 2 次复核）。+670★/日 是趋势源发现后的集中曝光曲线，不是买家信号；①缺口不存在：上游已用 SDK 自己收钱，第三方只能买它的 SDK 或跟它抢客户；②AGPL-3.0 阻断闭源二开与再分发；③四端保真单人做不了。星数加速反而说明上游在抢心智，越晚进入越没有位置——属第 4 条的反面样本（缺口由厂商自己变现，没给第三方留位）。</div>
+<div><b>可行性：</b>3,793★（今日 +999，API 核实），409 fork，AGPL-3.0，TypeScript，仓库 179MB，11-24 仍在推送；官网 mroffice.ai、npm 包 mroffice-embed、Embed / MCP / Sign in with MR Office 开发者页——上游自己在卖订阅与嵌入 SDK。docx/xlsx/pptx/pdf 四端 OOXML 保真是十年量级工程，单人无法维护，OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。</div>
+<div style="margin-top:6px"><b>理由：</b>维持不投入（第 3 次复核）。3 天 2,065→2,783→3,793，+999 是趋势曝光曲线的延续，不是买家信号；①缺口由厂商自己用 SDK 变现，第三方只能买它的 SDK 或跟它抢客户；②AGPL-3.0 阻断闭源二开与再分发；③四端保真单人做不了。越热越说明上游在抢心智，晚进入没有位置（第 4 条的反面样本）。</div>
 <ul>
 <li>唯一残留是在自有系统里嵌『只读预览 xlsx』这类极窄需求，那属于采购官方 SDK，不是可做的生意</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-24T08:49:41 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-24（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/XinaTian/MROffice" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
@@ -391,13 +410,13 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">不建议投入</div>
-<div><b>可行性：</b>503★（2026-11-24 API 核实），Apache-2.0，TypeScript/Electron，2026-11-21 建仓（3 天），71 fork、8 open issue，官网 pibot.space + 文档站，中文/日文 README，已出 macOS/Win/Linux 桌面端 + Android + relay + runner + ACP，内核是第三方 pi agent。工程上是多端壳 + 策略引擎 + 沙箱（anthropic sandbox-runtime）+ 审批与审计日志 + 定时例程，MVP 单人能做，但四端加移动端加自托管 relay 的长期维护量远超单人。</div>
-<div style="margin-top:6px"><b>理由：</b>不投入。①赛道由模型厂商定义：Claude/ChatGPT/Cursor 桌面端已内置 computer use、审批与本地文件读写，用户付费买的是模型订阅，壳层被免费赠送——这层『多 Agent 桌面』正在被上游吞掉（第 6 条）。②无抽成截面：主打 Ollama/OpenRouter/自有 key，token 收入不在你手里，工具本身又免费，Apache-2.0 虽允许闭源，但『可闭源』不等于『有人买』。③3 天 503★ + 71 fork 是发布传播，无付费意向词（flags 已标），与昨日 KKKKhazix/agent-autoloop 同一模式。④维护面：4 平台 + relay + 插件生态 + 每周变化的模型/工具协议，属持续运维型重活，不是 7 天内能交付的商品。</div>
+<div><b>可行性：</b>559★（+57，API 核实），83 fork / 10 open issue，Apache-2.0，TypeScript/Electron，四端 + Android + relay + ACP，内核是第三方 pi agent，官网 pibot.space + 文档站。工程上是壳 + 策略引擎 + 沙箱 + 审批审计 + 定时例程，MVP 单人能出，但四端加移动端加自托管 relay 的长期维护量远超单人。</div>
+<div style="margin-top:6px"><b>理由：</b>维持不投入（第 2 次复核）。增速已从 3 天 503★ 衰减到 +57/日，是发布期传播的自然回落，不是采用增长；①赛道由模型厂商定义，Claude/ChatGPT/Cursor 桌面端已内置 computer use 与本地文件权限，壳层被免费赠送；②无抽成截面：主打自带 key/Ollama，token 收入不在你手里，工具又免费；③维护面：4 平台 + relay + 插件 + 每周变化的模型协议，不是 7 天能交付的商品；④仍无付费意向词。</div>
 <ul>
 <li>只能当『某个垂直流程的 Agent 封装』底座（固定格式报表、发票/合同整理），卖流程与交付，不卖这个壳</li>
 <li>若要做，先拿到 1 家愿为『本地跑 + 审批留痕 + 审计日志』付年费的企业客户（合规/审计场景），否则不投入</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-24T08:49:41 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-24（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/w01fb0ss/PiBot" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
@@ -484,11 +503,14 @@ footer p{margin:5px 0}
 <li>星数高 ≠ 赚钱；一年才等到第一个付费用户是真实存在的情况</li>
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
-<div class="card">本日未进行 DSH 复核（GUI 会话未在线或复核层尚未启用）。以上项目均为<b>机器基线 + 待 DSH 判定</b>，不含可行性与投入建议，请勿直接当作决策依据。</div>
+<div class="card good">
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-25T08:54:15 · DSH 会话基于当日快照人工判断</p>
+<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+</div>
 </section>
 <footer>
 <p><b>免责声明</b>：本报告仅作自动化研究与信息整理，不构成投资、副业、创业或任何商业决策建议；数据为平台公开指标的瞬时快照，可能随时间变化，且不保证完整准确。</p>
-<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>机器判定（本日未复核）</b>。</p>
+<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>已复核</b>。</p>
 <p>数据日期 2026-11-25 · 生成于 2026-11-25T08:30:54 · 数据源 知乎 / GitHub 趋势 · 低频调用、不绕过平台风控。</p>
 </footer>
 </div></body></html>
