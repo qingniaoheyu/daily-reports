@@ -538,8 +538,15 @@ footer p{margin:5px 0}
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
 <div class="card good">
-<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-26T08:54:19 · DSH 会话基于当日快照人工判断</p>
-<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-26T08:56:29 · DSH 会话基于当日快照人工判断</p>
+<p>今日新增 4 个项目，全部来自 GitHub 趋势（知乎主源今日 0 个新项目），存量 60 个项目里 2 个有实质变化（MROffice +816★、universal-game-mod-manager +744★，均维持 no）。4 个新增里 3 个（clipboard-history-manager-windows、steam-achievement-manager-windows、steam-game-idler）与昨日 mod manager 是同一批 11-23 20 分钟内建仓、同一 README 模板、0 fork/0 issue 的刷星仓，星数虽经 API 核实但不可信，全部判 no；只有 openset-llm 是有 fork/issue/持续合并 PR 的真项目（8GB 内存 + AVX-512 CPU 跑 27B），但 MIT 免费、无付费截面，判 watch。另有 25 个知乎盘点老项目（172/437 赞回答）首次补齐判定，全部 no —— 都是免费自托管平台或已饱和的免费工具，没有付费截面。结论：今日新增里没有值得投入的项目，唯一可跟进的是 openset-llm 的『无 GPU 私有化部署』场景，前提是客户机器支持 AVX-512。</p>
+<ul class="pts">
+<li>刷星仓识别：clipboard（1,261★）、steam-achievement（1,058★）、steam-game-idler（681★）三仓在 2026-11-23 21:19–21:40 由 3 个不同账号建仓，与 11-23 21:30 的 universal-game-mod-manager 同 README 模板、同『exe 与 libvlc.dll 放同一目录』要求、版本号 4.0.x–4.2.x，0 fork / 0~1 issue、建仓后基本没有新提交 —— 判定为批量造仓。其 Release 包要求外部 DLL 同目录，存在供应链风险，不推荐、不下载、不分发。</li>
+<li>openset-llm 判 watch（今日唯一真项目）：839★ / 69 fork / 8 open issue / 11-25 仍在合并 PR，MIT，C++；卖点是 8GB 内存 + AVX-512 CPU 上跑 27B 三元量化模型（17–20 tok/s）、OpenAI 兼容 API。无商业版、无托管服务，知乎 0 提及，无付费截面。跟进条件：客户机器须支持 AVX-512（Ice Lake+/Zen4+），只做私有化部署交付（一次性 1–3 万元），不卖引擎、不做分发。</li>
+<li>25 个知乎盘点老项目首次判定全 no：mastodon/discourse/chatwoot/openemr/nopCommerce/snipe-it 是重交付 + 合规的 IT 生意（个人无资质、无 SLA 能力）；pot/chatbox/lux/Hitomi/pyvideotrans/backgroundremover/stable-diffusion-webui 是免费工具或免费生态，赛道饱和；DevWeekly/CS-Books-Store 是资源合集（无产品形态、有版权风险）；wizwizxui-timebot 是代理/VPN 销售机器人，直接排除。它们身上的『订阅/收费』付费词来自盘点语境，不是购买意向。</li>
+<li>MROffice 第 4 次复核维持 no：4,614★（+816，API 核实），日增 +999→+816 已见顶回落；提交信息显示 『Exported from MR Note』，仓库是商业产品的编辑器导出，官网在卖订阅与 embed SDK，AGPL-3.0 阻断二开。此后不再重复复核，除非出现付费客户线索。</li>
+<li>存量 go 的窗口提醒：PaperStudio（BarTender 免费版不支持 Excel 绑定）11-28 到期，今日无新增证据。明日（11-27）须检查两件事是否落地：『Excel 字段映射 → 批量标签 PDF』最小 demo、闲鱼挂单后的想要人数与咨询内容；拿不到 1 个付费意向即按原计划降 watch，不再续期。</li>
+</ul>
 </div>
 </section>
 <footer>
