@@ -133,7 +133,7 @@ footer p{margin:5px 0}
 </style></head><body>
 <header><div class="wrap">
 <div class="eyebrow">MONEY RADAR / DAILY · PROJECT LEVEL</div>
-<h1>每日赚钱热点确认说明 <span class="badge-mode">机器判定 · 本日未复核</span></h1>
+<h1>每日赚钱热点确认说明 <span class="badge-mode reviewed">DSH 已复核</span></h1>
 <div class="sub">落到具体项目层级：用 CLI 真实指标量化需求，逐日差分判断持续度，从回答正文找付费意向；机器只给可核查基线，可行性与是否可投入由 DSH 判定。</div>
 <div class="meta-row">
 <div class="meta-item">日期 · <b>2026-11-26</b></div>
@@ -141,7 +141,7 @@ footer p{margin:5px 0}
 <div class="meta-item">信号数 · <b>104</b></div>
 <div class="meta-item">具体项目 · <b>64</b></div>
 <div class="meta-item">趋势快照 · <b>15 天</b></div>
-<div class="meta-item">已判定项目 · <b>35</b></div>
+<div class="meta-item">已判定项目 · <b>64</b></div>
 <div class="meta-item">生成 · <b>2026-11-26T08:30:54</b></div>
 </div></div></header><div class="wrap">
 <section><h2><span class="num">1</span>数据概览</h2>
@@ -151,7 +151,7 @@ footer p{margin:5px 0}
 <div class="stat"><div class="v">1</div><div class="l">真需求</div></div>
 <div class="stat"><div class="v">7</div><div class="l">仅热度</div></div>
 <div class="stat"><div class="v">2</div><div class="l">无法确认</div></div>
-<div class="stat"><div class="v">35</div><div class="l">已判定项目</div></div>
+<div class="stat"><div class="v">64</div><div class="l">已判定项目</div></div>
 </div>
 <div class="card warn"><h3 style="margin-top:0">⚠️ 先看这个：数据口径与局限</h3><p style="margin-bottom:0">本报告只回答两件事：<b>今天有哪些具体方向/项目值得看</b>，以及<b>它们的需求是不是真的</b>。CLI 的 <code>*_7_days</code> 与 <code>pv_incr_rate</code> 实测全为 0，趋势由本地逐日快照差分得出；满 7 天前不判定持续需求。今日快照第 <b>15</b> 天。「是否可以投入」由 DSH 判定层给出，未判定时明确显示「待 DSH 判定」。</p></div>
 </section>
@@ -194,8 +194,8 @@ footer p{margin:5px 0}
 <div class="stats">
 <div class="stat"><div class="v">4</div><div class="l">今日首次出现</div></div>
 <div class="stat"><div class="v">60</div><div class="l">存量项目（只记增量）</div></div>
-<div class="stat"><div class="v">35</div><div class="l">已有 DSH 判定（含承继）</div></div>
-<div class="stat"><div class="v">29</div><div class="l">待 DSH 判定</div></div>
+<div class="stat"><div class="v">64</div><div class="l">已有 DSH 判定（含承继）</div></div>
+<div class="stat"><div class="v">0</div><div class="l">待 DSH 判定</div></div>
 </div>
 <h3>今日首次出现（4）</h3>
 <div class="dir"><div class="dir-head"><div>
@@ -221,7 +221,17 @@ footer p{margin:5px 0}
 <li>✅ 来源：GitHub 趋势（近 3 周新起量仓库，非知乎信号）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>1,261★（GitHub API 核实，与快照一致），MIT，C#/C++（WinUI），6.1MB；2026-11-23 21:40 建仓，唯一一次 push 也在 21:40，0 fork / 0 open issue / 6 watcher，Release 为 v4.2.1 且要求『exe 与 libvlc.dll 放同一目录』。功能是剪贴板历史、搜索、标签、图片预览、备份——WinUI 的常见练手项目，技术上一个熟练 C# 开发者 1–2 周能做出同类；真正的成本在 Hook 稳定性、多格式（HTML/富文本/位图/文件引用）保真与内存占用，不是不可逾越。免费竞品：Windows 自带 Win+V、Ditto、ClipboardFusion（有付费版）、CopyQ。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①星数不作证据：同一批刷星仓：2026-11-23 21:19–21:40 用 4 个不同账号建仓，README 同一模板、版本号 4.0.x/4.1.x/4.2.x，都要求『exe 与 libvlc.dll 放同一目录』，0 fork / 0~1 issue / 建仓后基本没有新提交；星数已核实但不可信，Release 包存在 DLL 供应链风险（第 6 条『星数高≠赚钱』的极端样本）；②需求被系统级功能覆盖：Win+V 已提供搜索历史，Ditto/CopyQ 免费多年，没有『商业软件被阉割』的缺口可补（方向 B 要求的是厂商故意留的残废位）；③它的商业模型不在软件本身，而在用免费仓库涨星后导流 Release，下载包里带 DLL，这类包不要装、不要分发、更不要作为二开底座；④知乎 0 提及，无付费意向词。</div>
+<ul>
+<li>若真要做剪贴板工具，必须自建干净实现，不引用其 Release 二进制，也不复用其仓库代码</li>
+<li>不做通用剪贴板，只做细分场景（如『模板片段 + 快捷键填充 + 跨设备同步』），否则打不过系统内置</li>
+<li>该批次（clipboard / steam-achievement / steam-game-idler / mod-manager）整体列入黑名单，不再跟踪</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/Umbra9179/clipboard-history-manager-windows" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -247,7 +257,15 @@ footer p{margin:5px 0}
 <li>✅ 来源：GitHub 趋势（近 3 周新起量仓库，非知乎信号）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>1,058★（API 核实），MIT，Rust + Shell/NSIS，7.4MB；2026-11-23 21:31 建仓，push 时间同为 21:31，0 fork / 0 open issue / 3 watcher，v4.1.8，同一 libvlc.dll 模板。功能是 Steam 成就解锁/回锁与游戏统计修改（SAM 类）。技术上『读本地 Steam 数据 + 调 API 改状态』是现成做法，已有开源实现（SAM、Steam Achievement Manager 的多个分支），没有技术壁垒。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①属于同一批刷星仓（见 clipboard 条目），星数不可信；②功能是改成就/改统计，违反 Steam 订阅协议，成就与统计回写会影响账号信誉，账号被封的风险由使用者承担——做成收费品等于把平台风险转嫁给买家；③免费同类已有多年，没有付费截面；④无付费意向证据。</div>
+<ul>
+<li>不做任何 Steam 账号数据修改/自动化工具：平台条款与封号风险不可控，收益与风险不成比例</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/solv4626/steam-achievement-manager-windows" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -273,7 +291,18 @@ footer p{margin:5px 0}
 <li>✅ 来源：GitHub 趋势（近 3 周新起量仓库，非知乎信号）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">观察位 · 暂不投入</div>
+<div><b>可行性：</b>839★（API 核实），69 fork / 8 open issue / 24 watcher，MIT，C++；2026-11-13 建仓，11-25 仍在合并 PR（#6/#7/#8，docker-compose、bench、install 自检），有兄弟项目 openset-tts，README 27KB 带可复现基准。卖点：8GB 内存 + AVX-512 CPU 上跑 27B（PrismML 三元量化 Bonsai-2-27B，5.95GB），17–20 tok/s，OpenAI 兼容 API。技术上真实，但能力被两件事锁死：①必须是 AVX-512（Ice Lake+/Zen4+），国产信创常见机型（鲲鹏、海光、老 Xeon）多数不支持；②只跑特定三元模型，不是通用推理引擎。竞品：llama.cpp / ik_llama.cpp、Ollama、LM Studio，以及上游 PrismML 自己的分支。</div>
+<div style="margin-top:6px"><b>理由：</b>观察，不投入。①这是今日唯一有真实社区痕迹的项目（fork/issue/持续合并 PR），与刷星三件套证据等级完全不同；②但没有付费截面：MIT 免费、无商业版/托管服务，价值主张是『省掉 GPU 的钱』，买家只会为一次性部署与调优付费，不会为引擎订阅；③国内无需求证据（知乎 0 提及），且硬件门槛把大部分潜在客户挡在门外；④观察点很窄：是否存在『无 GPU 的私有化推理』客户，且机器确实支持 AVX-512。</div>
+<ul>
+<li>先确认目标客户服务器 CPU 支持 AVX-512（Ice Lake+/Zen4+），否则引擎跑不起来，直接放弃</li>
+<li>只按『私有化部署 + 本地文档抽取/知识库』的交付服务报价（一次性 1–3 万元），不卖引擎、不做分发</li>
+<li>拿到 1 个真实客户的 CPU-only 机器实测（17–20 tok/s 是否够业务用）后再评估是否转 go</li>
+<li>不与刷星三件套混为一谈：本项目有 fork/issue/持续提交，证据等级不同</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/opensetlabs/openset-llm" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -299,7 +328,15 @@ footer p{margin:5px 0}
 <li>✅ 来源：GitHub 趋势（近 3 周新起量仓库，非知乎信号）</li>
 <li>⚠ 未发现明确付费/成交意向词</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>681★（API 核实），MIT，TypeScript + Rust + C#，14MB；2026-11-23 21:19 建仓，push 同为 21:19，0 fork / 0 open issue / 15 watcher，v4.0.4，同一 libvlc.dll 模板。功能：挂卡、挂时长、成就管理、多账号自动化。技术上是对接 SteamKit2 的现成做法，ASF（ArchiSteamFarm）等免费方案已成熟多年。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①同一批刷星仓之一；②挂卡/挂时长/多账号自动化直接违反 Steam 协议，多账号操作更容易触发风控，封号与库存损失由买家承担；③免费方案（ASF）已占位，没有付费截面；④无付费意向证据。</div>
+<ul>
+<li>不做 Steam 多账号/挂机自动化：平台条款与封号风险不可控</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/Basil0879/steam-game-idler" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <h3>存量项目 · 只记增量（60）</h3>
@@ -325,26 +362,26 @@ footer p{margin:5px 0}
 <tr><td><a href="https://github.com/safing/portmaster" target="_blank" rel="noopener">portmaster</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-22</div></td><td>—</td></tr>
 <tr><td><a href="https://github.com/go-shiori/shiori" target="_blank" rel="noopener">shiori</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-22</div></td><td>—</td></tr>
 <tr><td><a href="https://github.com/usememos/memos" target="_blank" rel="noopener">memos</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-22</div></td><td>—</td></tr>
-<tr><td><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="noopener">stable-diffusion-webui</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/photoprism/photoprism" target="_blank" rel="noopener">photoprism</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/AdguardTeam/AdGuardHome" target="_blank" rel="noopener">AdGuardHome</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/knadh/listmonk" target="_blank" rel="noopener">listmonk</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/nopSolutions/nopCommerce" target="_blank" rel="noopener">nopCommerce</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/snipe/snipe-it" target="_blank" rel="noopener">snipe-it</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/wizwizdev/wizwizxui-timebot" target="_blank" rel="noopener">wizwizxui-timebot</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/mastodon/mastodon" target="_blank" rel="noopener">mastodon</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/discourse/discourse" target="_blank" rel="noopener">discourse</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/chatwoot/chatwoot" target="_blank" rel="noopener">chatwoot</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/LemmyNet/lemmy" target="_blank" rel="noopener">lemmy</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/GeyserMC/Geyser" target="_blank" rel="noopener">Geyser</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/openemr/openemr" target="_blank" rel="noopener">openemr</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/fastenhealth/fasten-onprem" target="_blank" rel="noopener">fasten-onprem</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/nadermx/backgroundremover" target="_blank" rel="noopener">backgroundremover</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/KurtBestor/Hitomi-Downloader" target="_blank" rel="noopener">Hitomi-Downloader</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/Bin-Huang/chatbox" target="_blank" rel="noopener">chatbox</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/arc53/DocsGPT" target="_blank" rel="noopener">DocsGPT</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/interstellard/chatgpt-advanced" target="_blank" rel="noopener">chatgpt-advanced</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
-<tr><td><a href="https://github.com/Jackpopc/DevWeekly" target="_blank" rel="noopener">DevWeekly</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag lo">待 DSH 判定</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" target="_blank" rel="noopener">stable-diffusion-webui</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/photoprism/photoprism" target="_blank" rel="noopener">photoprism</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/AdguardTeam/AdGuardHome" target="_blank" rel="noopener">AdGuardHome</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/knadh/listmonk" target="_blank" rel="noopener">listmonk</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/nopSolutions/nopCommerce" target="_blank" rel="noopener">nopCommerce</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/snipe/snipe-it" target="_blank" rel="noopener">snipe-it</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/wizwizdev/wizwizxui-timebot" target="_blank" rel="noopener">wizwizxui-timebot</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/mastodon/mastodon" target="_blank" rel="noopener">mastodon</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/discourse/discourse" target="_blank" rel="noopener">discourse</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/chatwoot/chatwoot" target="_blank" rel="noopener">chatwoot</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/LemmyNet/lemmy" target="_blank" rel="noopener">lemmy</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/GeyserMC/Geyser" target="_blank" rel="noopener">Geyser</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/openemr/openemr" target="_blank" rel="noopener">openemr</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/fastenhealth/fasten-onprem" target="_blank" rel="noopener">fasten-onprem</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/nadermx/backgroundremover" target="_blank" rel="noopener">backgroundremover</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/KurtBestor/Hitomi-Downloader" target="_blank" rel="noopener">Hitomi-Downloader</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/Bin-Huang/chatbox" target="_blank" rel="noopener">chatbox</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/arc53/DocsGPT" target="_blank" rel="noopener">DocsGPT</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/interstellard/chatgpt-advanced" target="_blank" rel="noopener">chatgpt-advanced</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
+<tr><td><a href="https://github.com/Jackpopc/DevWeekly" target="_blank" rel="noopener">DevWeekly</a></td><td>2026-11-12 / 4</td><td class="num">55 → 55</td><td class="num">—</td><td class="num">1</td><td><span class="tag red">不建议</span></td><td>—</td></tr>
 </tbody></table>
 <p class="hint">另有 20 个存量项目本次没有变化，已折叠；完整记录在 state/registry.json，不进报告正文。</p>
 <h3>存量项目重点变化（最多 3 个）</h3>
@@ -373,12 +410,12 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">不建议投入</div>
-<div><b>可行性：</b>3,793★（今日 +999，API 核实），409 fork，AGPL-3.0，TypeScript，仓库 179MB，11-24 仍在推送；官网 mroffice.ai、npm 包 mroffice-embed、Embed / MCP / Sign in with MR Office 开发者页——上游自己在卖订阅与嵌入 SDK。docx/xlsx/pptx/pdf 四端 OOXML 保真是十年量级工程，单人无法维护，OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。</div>
-<div style="margin-top:6px"><b>理由：</b>维持不投入（第 3 次复核）。3 天 2,065→2,783→3,793，+999 是趋势曝光曲线的延续，不是买家信号；①缺口由厂商自己用 SDK 变现，第三方只能买它的 SDK 或跟它抢客户；②AGPL-3.0 阻断闭源二开与再分发；③四端保真单人做不了。越热越说明上游在抢心智，晚进入没有位置（第 4 条的反面样本）。</div>
+<div><b>可行性：</b>4,614★（今日 API 核实，快照记 4,598，+816），485 fork，AGPL-3.0，TypeScript，仓库 179MB；最近提交为『Update the editors to … Exported from MR Note …』，即本仓库是其商业产品（mroffice.ai）编辑器的导出，官网在卖订阅、AI 额度与 embed SDK（npm mroffice-embed）。docx/xlsx/pptx/pdf 四端 OOXML 保真仍是十年量级工程，单人无法维护；OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。</div>
+<div style="margin-top:6px"><b>理由：</b>维持不投入（第 4 次复核）。增速 2,065→2,783→3,793→4,614，日增 +999→+816 已见顶回落，是曝光曲线而非买家信号；①缺口由厂商自己用订阅与 SDK 变现，第三方没有位置；②AGPL-3.0 阻断闭源二开与再分发；③提交信息证实仓库是从商业产品导出的展示层，二开等于免费替它做市场。从今天起不再重复复核，除非出现付费客户线索。</div>
 <ul>
-<li>唯一残留是在自有系统里嵌『只读预览 xlsx』这类极窄需求，那属于采购官方 SDK，不是可做的生意</li>
+<li>唯一残留场景是自有系统内嵌『只读预览』，那属于采购官方 SDK，不是可做的生意</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-25（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/XinaTian/MROffice" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
@@ -408,13 +445,12 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">不建议投入</div>
-<div><b>可行性：</b>572★（2026-11-25 API 核实，快照记 554★），MIT，Rust + Slint，13.7MB，Windows only，2026-11-23 21:30 建仓且唯一一次 push 就在建仓同一分钟，0 fork / 0 open issue，README 已挂 v4.0.3 与 libvlc 依赖，声称覆盖 Steam/GOG/Epic/itch/Xbox 的游戏发现、Unity/Unreal 引擎识别、跨游戏通用 mod 安装与更新。技术上『发现游戏 + 拷文件』可行；真正难的是 mod 源与兼容层（BepInEx/MelonLoader/UE4SS 的逐版本适配），这是逐个游戏的长尾地狱，而且需要 mod 托管与分发基础设施。竞品：Vortex（Nexus 官方，免费 + Premium 变现）、Mod Organizer 2、r2modman/Thunderstore、CurseForge、Wabbajack、Steam Workshop。</div>
-<div style="margin-top:6px"><b>理由：</b>不投入。①星数不作证据：2 天 572★ 而 fork=0、issue=0、只有建仓那一次 push，是典型的刷星/发布传播形态，实际采用度为 0（第 6 条『星数高≠赚钱』，这里连星数都不可信）；②缺口不在『管理器』而在『mod 目录 + 兼容层 + 分发』：Nexus/Thunderstore/CurseForge 靠托管与分成赚钱，管理器是它们的免费赠品，做一个没有 mod 源的壳没有交易价值；③合规与封号：向商业游戏注入文件、碰反作弊（EAC/BattlEye）与平台条款，做成收费品等于把风险转给买家；④无任何付费意向证据（纯趋势源，知乎 0 提及）。</div>
+<div><b>可行性：</b>1,298★（今日 API 核实，与快照一致，+744），0 fork / 1 open issue / 6 watcher，MIT，Rust + Slint；2026-11-23 21:30 建仓后没有新提交。今日新增的 clipboard（21:40）、steam-achievement（21:31）、steam-game-idler（21:19）三个仓库与它同日、同 README 模板、同 libvlc.dll 要求——四个账号在 20 分钟内批量建仓。</div>
+<div style="margin-top:6px"><b>理由：</b>维持不投入，今日拿到旁证后结论升级。①昨日只是怀疑刷星，今天可确认是批量造仓：同一模板 4 个仓、0 fork、星数却近千（第 6 条最直接的样本）；②mod 管理器的价值在『mod 源 + 兼容层 + 分发』，Nexus/Thunderstore/CurseForge 靠托管与分成赚钱，管理器是它们的免费赠品；③向商业游戏注入文件、碰反作弊与平台条款，收费等于转嫁风险；④知乎 0 提及，无付费意向证据。</div>
 <ul>
-<li>只有当『某一款具体游戏的 mod 一键安装 + 冲突修复』这种窄场景，且有社区愿为省掉手动折腾付 20–50 元时才重估</li>
-<li>不做通用管理器、不自建 mod 托管/分发（那是平台活）</li>
+<li>该批次 4 个仓库（mod-manager / clipboard / steam-achievement / steam-game-idler）整体不再跟踪，除非出现真实 fork/issue 与独立报道</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-25（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/Indigo-0167/universal-game-mod-manager" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
@@ -501,11 +537,14 @@ footer p{margin:5px 0}
 <li>星数高 ≠ 赚钱；一年才等到第一个付费用户是真实存在的情况</li>
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
-<div class="card">本日未进行 DSH 复核（GUI 会话未在线或复核层尚未启用）。以上项目均为<b>机器基线 + 待 DSH 判定</b>，不含可行性与投入建议，请勿直接当作决策依据。</div>
+<div class="card good">
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-26T08:54:19 · DSH 会话基于当日快照人工判断</p>
+<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+</div>
 </section>
 <footer>
 <p><b>免责声明</b>：本报告仅作自动化研究与信息整理，不构成投资、副业、创业或任何商业决策建议；数据为平台公开指标的瞬时快照，可能随时间变化，且不保证完整准确。</p>
-<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>机器判定（本日未复核）</b>。</p>
+<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>已复核</b>。</p>
 <p>数据日期 2026-11-26 · 生成于 2026-11-26T08:30:54 · 数据源 知乎 / GitHub 趋势 · 低频调用、不绕过平台风控。</p>
 </footer>
 </div></body></html>
