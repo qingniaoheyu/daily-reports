@@ -133,7 +133,7 @@ footer p{margin:5px 0}
 </style></head><body>
 <header><div class="wrap">
 <div class="eyebrow">MONEY RADAR / DAILY · PROJECT LEVEL</div>
-<h1>每日赚钱热点确认说明 <span class="badge-mode">机器判定 · 本日未复核</span></h1>
+<h1>每日赚钱热点确认说明 <span class="badge-mode reviewed">DSH 已复核</span></h1>
 <div class="sub">落到具体项目层级：用 CLI 真实指标量化需求，逐日差分判断持续度，从回答正文找付费意向；机器只给可核查基线，可行性与是否可投入由 DSH 判定。</div>
 <div class="meta-row">
 <div class="meta-item">日期 · <b>2026-11-27</b></div>
@@ -203,7 +203,7 @@ footer p{margin:5px 0}
 <p class="hint">这些项目以前出现过，本次不重复出卡；「本次变化」列只列实质增量，显示「—」表示本次没有新变化。</p>
 <table><thead><tr><th>项目</th><th>首现 / 次数</th><th class="num">基线 首→今</th><th class="num">星数 首→今</th><th class="num">今日提及</th><th>DSH 判定</th><th>本次变化</th></tr></thead><tbody>
 <tr><td><a href="https://github.com/opensetlabs/openset-llm" target="_blank" rel="noopener">openset-llm</a> <span class="tag hi">★重点</span></td><td>2026-11-26 / 2</td><td class="num">42 → 44 (+1.8)</td><td class="num">827 → 1,732</td><td class="num">0</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-26</div></td><td>星数 +905</td></tr>
-<tr><td><a href="https://github.com/jingguanzhang/PaperStudio" target="_blank" rel="noopener">PaperStudio 标签打印</a> <span class="tag hi">★重点</span></td><td>2026-11-12 / 16</td><td class="num">41 → 41 (-15.0)</td><td class="num">659 → 659</td><td class="num">0</td><td><span class="tag gr">可投入</span><div style="font-size:11px;color:#64748b">承继自 2026-11-26</div></td><td>基线 -15.0</td></tr>
+<tr><td><a href="https://github.com/jingguanzhang/PaperStudio" target="_blank" rel="noopener">PaperStudio 标签打印</a> <span class="tag hi">★重点</span></td><td>2026-11-12 / 16</td><td class="num">41 → 41 (-15.0)</td><td class="num">659 → 659</td><td class="num">0</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-26</div></td><td>基线 -15.0</td></tr>
 <tr><td><a href="https://github.com/zeromicro/go-zero" target="_blank" rel="noopener">go-zero</a></td><td>2026-11-12 / 16</td><td class="num">65 → 65</td><td class="num">3.3万 → 3.3万</td><td class="num">1</td><td><span class="tag red">不建议</span><div style="font-size:11px;color:#64748b">承继自 2026-11-26</div></td><td>—</td></tr>
 <tr><td><a href="https://github.com/monkeyWie/gopeed" target="_blank" rel="noopener">gopeed</a></td><td>2026-11-12 / 16</td><td class="num">65 → 65</td><td class="num">2.8万 → 2.8万</td><td class="num">0</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-26</div></td><td>—</td></tr>
 <tr><td><a href="https://github.com/NawfalMotii79/PLFM_RADAR" target="_blank" rel="noopener">PLFM_RADAR</a></td><td>2026-11-12 / 16</td><td class="num">65 → 65</td><td class="num">2.7万 → 2.7万</td><td class="num">0</td><td><span class="tag red">不建议</span><div style="font-size:11px;color:#64748b">承继自 2026-11-26</div></td><td>—</td></tr>
@@ -270,15 +270,16 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">观察位 · 暂不投入</div>
-<div><b>可行性：</b>839★（今日 API 复核，快照记 827），69 fork / 8 open issue / 24 watcher，MIT，C++；2026-11-13 建仓，11-25 仍在合并 PR（#6/#7/#8，docker-compose、bench、install 自检），有兄弟项目 openset-tts，README 27KB 带可复现基准。卖点：8GB 内存 + AVX-512 CPU 上跑 27B（PrismML 三元量化 Bonsai-2-27B，5.95GB），17–20 tok/s，OpenAI 兼容 API。技术上真实，但能力被两件事锁死：①必须是 AVX-512（Ice Lake+/Zen4+），国产信创常见机型（鲲鹏、海光、老 Xeon）多数不支持；②只跑特定三元模型，不是通用推理引擎。竞品：llama.cpp / ik_llama.cpp、Ollama、LM Studio，以及上游 PrismML 自己的分支。</div>
-<div style="margin-top:6px"><b>理由：</b>观察，不投入。①这是今日唯一有真实社区痕迹的项目（fork/issue/持续合并 PR），与刷星三件套证据等级完全不同；②但没有付费截面：MIT 免费、无商业版/托管服务，价值主张是『省掉 GPU 的钱』，买家只会为一次性部署与调优付费，不会为引擎订阅；③国内无需求证据（知乎 0 提及），且硬件门槛把大部分潜在客户挡在门外；④观察点很窄：是否存在『无 GPU 的私有化推理』客户，且机器确实支持 AVX-512。</div>
+<div><b>可行性：</b>1,733★（今日 API 核实，快照记 1,732；昨日 827，单日 +905）、165 fork（昨 69）、26 open issue（昨 8）、43 watcher、5 位贡献者；11-25 v0.1.0、11-26 v0.2.0（Release 无二进制资产）；MIT，C++，仓库 7.5MB。今日 #76 合入『256-bit kernels for CPUs without AVX-512』并加 --portable：AVX2-only 的机器（Intel 12 代及以后、老 Core、AMD Zen1–3）现在也能起，昨天写的『必须 AVX-512』硬门槛已被解除（AVX2 速度官方未实测）；仍限 Linux x86-64（Windows 走 WSL2），ARM/鲲鹏不支持。真正的工程量在 PrismML 三元模型的 graft 与 MTP 头、安装器与 bench 的健壮性——今天 10 多个 fix PR 全是 install/graft/model/bench 的边界情况，说明『让它在一台陌生机器上稳定跑起来』本身就是最难的一步，而这恰好是可收钱的交付点。竞品：llama.cpp / ik_llama.cpp、Ollama、LM Studio、PrismML 自己的分支。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 watch，不投入。①+905★/天是传播曲线不是买家信号：11-23~11-26 有多家技术站（trendshift 记为 7 天 +1,171★、explainx、lavx、aiboss88 等）转载 + GitHub 趋势，符合 audit_notes 第 6 条『高星≠赚钱』；fork 69→165、issue 8→26 同步增长说明技术关注真实（不是 11-23 那批刷星仓），但关注者是『想省掉 API 账单』的自托管开发者。②商业截面仍为零：MIT、无商业版、无托管服务、无赞助入口，README 卖点明写 no per-token fee——买家付费的动机恰恰是『不付钱』。③硬件门槛今天刚被 #76 解除，提高了可交付性，但也意味着差异化从『独家能力』退到『交付与调优』，这不是软件订阅的生意。④国内需求零证据（知乎 0 提及），且信创 ARM 机型跑不了，目标客户只能是手里有 x86 Linux 服务器的公司。</div>
 <ul>
-<li>先确认目标客户服务器 CPU 支持 AVX-512（Ice Lake+/Zen4+），否则引擎跑不起来，直接放弃</li>
-<li>只按『私有化部署 + 本地文档抽取/知识库』的交付服务报价（一次性 1–3 万元），不卖引擎、不做分发</li>
-<li>拿到 1 个真实客户的 CPU-only 机器实测（17–20 tok/s 是否够业务用）后再评估是否转 go</li>
-<li>不与刷星三件套混为一谈：本项目有 fork/issue/持续提交，证据等级不同</li>
+<li>先拿 1 台客户真实 x86-64 Linux 机器（AVX2 可，AVX-512 更好）实测：27B/8GB 下 17–20 tok/s 是否成立、长上下文内存是否够</li>
+<li>只报『私有化部署 + 接到客户自己的文档抽取/客服/内部检索流程』的一次性 1–3 万元，不卖引擎、不做分发、不承诺 SLA</li>
+<li>盯 v0.3 是否出现商业版/托管/定价页：作者一旦自己开始卖服务，第三方交付位就消失</li>
+<li>11-30 前拿不到 1 个具体客户场景（含机器型号与要接的业务）→ 降 no，不再跟踪</li>
+<li>星数曲线不再作为判据，只认『有人为部署付钱』</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:58:22 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-27T08:50:52 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-26（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/opensetlabs/openset-llm" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
@@ -312,18 +313,18 @@ footer p{margin:5px 0}
 <div style="margin-top:10px;font-size:12.5px"><b>知乎出处：</b>
 <a href="https://www.zhihu.com/answer/2026740256095913983" target="_blank" rel="noopener">回答 2026740256095913983（5024 赞同）</a> · 
 </div>
-<div class="dsh go"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
-<div class="verdict">可投入</div>
-<div><b>可行性：</b>659★ 不变，5,024 赞同的原回答仍在，BarTender SE 免费版不支持 Excel 绑定的缺口未变；基线 41.3→56.3（+15.0）是『今日提及 +1』的回摆，两天前刚好是 -15.0，同源反向——说明该指标只是知乎提及噪声，不是需求侧信号。无新增竞品、无免费替代出现。买家是仓储/门店/工厂，Excel/ERP 字段 → 标签 PDF 是日常刚需，2–4 周可做行业化版本。</div>
-<div style="margin-top:6px"><b>理由：</b>维持 go（第 4 天），但今天必须把『判断』变成『动作』。前三天只有判定没有验证，基线在 41.3 与 56.3 之间来回摆，本身就证明『被提及』不等于『有人买』；窗口按原定 11-28（第 7 天）到期，届时拿不到 1 个付费意向即降 watch，不再续期。今天要出可展示的最小交付（Excel 字段映射 → 批量标签 PDF）并在闲鱼挂 1 条测『想要人数』，用询价而不是热度来决定去留（第 4/5 条最标准的样本，唯一风险是验证一直没做）。</div>
+<div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">观察位 · 暂不投入</div>
+<div><b>可行性：</b>662★（今日 API，快照 659）、131 fork、5 open issue，MIT，仓库 3.6MB；最后 push 2026-10-16，此后无提交。缺口未变：BarTender SE 免费版故意不支持 Excel 数据绑定（方向 B 的典型样本，audit_notes 第 5 条），Excel/ERP 字段 → 批量标签 PDF 是仓储/门店/工厂每天要干的活，以 PaperStudio 二开做『字段映射 + 批量导出 + 行业模板』2–4 周能出可用版本。技术上确定可行。</div>
+<div style="margin-top:6px"><b>理由：</b>从 go 降为 watch（机会仍在，缺的是验证不是可行性）。①今日 material_change 只是基线 −15.0（提及 −1）的回摆：11-25 是 +15.0，同源反向，属知乎提及噪声，不是需求侧变化；星数只 +3，上游仓库 11 天无提交。②go 的前提是『当天出 Excel→批量标签 PDF 的 demo，并在闲鱼挂 1 条测想要人数』，公开侧连续三天看不到任何询价/挂单/交付痕迹；继续挂 go 只会让『已判定』掩盖『没动作』（audit_notes 第 6 条：一年才等到第一个付费用户是真实存在的）。③5,024 赞同的原回答与 659★ 是『被盘点』的热度，不等于有人为它付钱。</div>
 <ul>
-<li>今天（11-25）完成『Excel 字段映射 → 批量标签 PDF』最小 demo，跑通 1 个真实 SKU 表</li>
-<li>今天在闲鱼/淘宝挂 1 条（300–500 元/套），记录想要人数与咨询内容，作为唯一判据</li>
-<li>锁定 1 个细分行业（电商仓储/生鲜门店），确认其 Excel/ERP 字段结构</li>
-<li>以 PaperStudio 二开为主，不做 BarTender 逆向</li>
-<li>11-28 前拿不到 1 个付费意向 → 自动降 watch，不再挂 go</li>
+<li>拿到 1 条真实询价/付费意向（哪怕 300 元）立刻回 go，并在 registry 记下来源与金额</li>
+<li>验证方式固定为『Excel 字段映射 → 批量标签 PDF』最小 demo + 闲鱼挂 1 条（300–500 元/套），记录想要人数与咨询内容</li>
+<li>锁定 1 个细分行业（电商仓储 / 生鲜门店 / 小型工厂），确认其 Excel/ERP 字段结构再动手</li>
+<li>以 PaperStudio 二开为主，不做 BarTender 逆向；宣传里不出现『BarTender 破解/替代破解』字样</li>
+<li>12-05 前仍无任何真实询价 → 不再跟踪，不再以提及次数与星数作为判据</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-25T08:54:15 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-27T08:50:52 · DSH 会话基于当日快照</div>
 </div>
 <div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-26（存量项目以首次/上次判定为准，不重复判定）</div>
 </div></div>
@@ -409,11 +410,14 @@ footer p{margin:5px 0}
 <li>星数高 ≠ 赚钱；一年才等到第一个付费用户是真实存在的情况</li>
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
-<div class="card">本日未进行 DSH 复核（GUI 会话未在线或复核层尚未启用）。以上项目均为<b>机器基线 + 待 DSH 判定</b>，不含可行性与投入建议，请勿直接当作决策依据。</div>
+<div class="card good">
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-27T08:50:52 · DSH 会话基于当日快照人工判断</p>
+<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+</div>
 </section>
 <footer>
 <p><b>免责声明</b>：本报告仅作自动化研究与信息整理，不构成投资、副业、创业或任何商业决策建议；数据为平台公开指标的瞬时快照，可能随时间变化，且不保证完整准确。</p>
-<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>机器判定（本日未复核）</b>。</p>
+<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>已复核</b>。</p>
 <p>数据日期 2026-11-27 · 生成于 2026-11-27T08:30:52 · 数据源 知乎 / GitHub 趋势 · 低频调用、不绕过平台风控。</p>
 </footer>
 </div></body></html>
