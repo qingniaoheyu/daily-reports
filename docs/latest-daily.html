@@ -133,7 +133,7 @@ footer p{margin:5px 0}
 </style></head><body>
 <header><div class="wrap">
 <div class="eyebrow">MONEY RADAR / DAILY · PROJECT LEVEL</div>
-<h1>每日赚钱热点确认说明 <span class="badge-mode">机器判定 · 本日未复核</span></h1>
+<h1>每日赚钱热点确认说明 <span class="badge-mode reviewed">DSH 已复核</span></h1>
 <div class="sub">落到具体项目层级：用 CLI 真实指标量化需求，逐日差分判断持续度，从回答正文找付费意向；机器只给可核查基线，可行性与是否可投入由 DSH 判定。</div>
 <div class="meta-row">
 <div class="meta-item">日期 · <b>2026-11-28</b></div>
@@ -141,7 +141,7 @@ footer p{margin:5px 0}
 <div class="meta-item">信号数 · <b>104</b></div>
 <div class="meta-item">具体项目 · <b>37</b></div>
 <div class="meta-item">趋势快照 · <b>17 天</b></div>
-<div class="meta-item">已判定项目 · <b>35</b></div>
+<div class="meta-item">已判定项目 · <b>37</b></div>
 <div class="meta-item">生成 · <b>2026-11-28T08:30:51</b></div>
 </div></div></header><div class="wrap">
 <section><h2><span class="num">1</span>数据概览</h2>
@@ -151,7 +151,7 @@ footer p{margin:5px 0}
 <div class="stat"><div class="v">1</div><div class="l">真需求</div></div>
 <div class="stat"><div class="v">7</div><div class="l">仅热度</div></div>
 <div class="stat"><div class="v">1</div><div class="l">无法确认</div></div>
-<div class="stat"><div class="v">35</div><div class="l">已判定项目</div></div>
+<div class="stat"><div class="v">37</div><div class="l">已判定项目</div></div>
 </div>
 <div class="card warn"><h3 style="margin-top:0">⚠️ 先看这个：数据口径与局限</h3><p style="margin-bottom:0">本报告只回答两件事：<b>今天有哪些具体方向/项目值得看</b>，以及<b>它们的需求是不是真的</b>。CLI 的 <code>*_7_days</code> 与 <code>pv_incr_rate</code> 实测全为 0，趋势由本地逐日快照差分得出；满 7 天前不判定持续需求。今日快照第 <b>17</b> 天。「是否可以投入」由 DSH 判定层给出，未判定时明确显示「待 DSH 判定」。</p></div>
 </section>
@@ -198,8 +198,8 @@ footer p{margin:5px 0}
 <div class="stats">
 <div class="stat"><div class="v">2</div><div class="l">今日首次出现</div></div>
 <div class="stat"><div class="v">35</div><div class="l">存量项目（只记增量）</div></div>
-<div class="stat"><div class="v">35</div><div class="l">已有 DSH 判定（含承继）</div></div>
-<div class="stat"><div class="v">2</div><div class="l">待 DSH 判定</div></div>
+<div class="stat"><div class="v">37</div><div class="l">已有 DSH 判定（含承继）</div></div>
+<div class="stat"><div class="v">0</div><div class="l">待 DSH 判定</div></div>
 </div>
 <h3>今日首次出现（2）</h3>
 <div class="dir"><div class="dir-head"><div>
@@ -226,7 +226,16 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：多少钱、收费</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>GitHub API 实测 4★ / 2 fork / 1 open issue，Java + Maven，2025-09-02 建仓、2026-11-27 仍有提交，仓库 199KB，README 只有一张编辑器属性面板截图，无 Release、无文档、无 License。它是知乎回答作者（chengenzhao）自己的 Java 游戏编辑器工程；xtrike-resources 是它的资源库，配套作者另一个项目 TransitFX。技术上单人当然能继续写，但这是别人的爱好工程，没有可售卖载体，也没有『商业软件被阉割』的缺口可补。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①快照 flags 标『星数未核实（今日新发现）』，本次 API 复核仅 4★/2 fork——不是被市场验证过的项目，星数待核实且核实后更差。②来源是同一条知乎回答（105 赞，主题是游戏业裁员、独立游戏为什么难赚钱，今日 records 里 direction『独立游戏』首次出现）；answer 里的『多少钱/收费』是谈行业收入与成本的词，不是对这两个仓库的采购意向，属意向词误报（audit_notes 第 2 条）。③即便作者想商业化，卖点是引擎/编辑器本身，正面撞 Unity / Godot / UE 与各类 2D 编辑器，免费替代充分；④无 License，二开与再分发边界不清，连『拿来改』都不安全。4★ 连社区都没有，遑论买家。</div>
+<ul>
+<li>仅作了解 Java 游戏编辑器实现的阅读材料；不做二开、不做分发</li>
+<li>若作者后续发布正式产品与定价页，再按『竞品』跟踪，不作为投入标的</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-28T08:53:04 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2077454515498906205" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -253,16 +262,24 @@ footer p{margin:5px 0}
 <li>✅ 出现付费意向词：多少钱、收费</li>
 <li>⚠ 星数未核实（今日新发现项目，尚未经 GitHub API 校验）</li>
 </ul></div>
-<div class="dsh pending"><div class="dh">DSH 判定 · 可行性与是否可投入</div><div class="verdict">待 DSH 判定</div><div>本项仅有机器可核查基线（星数/竞品/证据/红旗），<strong>尚未经 DSH 会话分析可行性与投入建议</strong>。请勿把机器基线当作「可以投入」的结论。</div></div>
+<div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
+<div class="verdict">不建议投入</div>
+<div><b>可行性：</b>GitHub API 实测 2★ / 0 fork / 0 open issue，Java + Maven，仓库 4.1MB；内容是 ajvg/jvg/act 资源文件，README 明写『ajvg 可用 FXCity Editor 打开，jvg/act 供 TransitFX 使用』，并发布到 Maven 坐标 io.github.chengenzhao:xtrike-resources:3.3。本质是某个人游戏项目的素材/资源库，无独立产品形态、无文档、无 License。</div>
+<div style="margin-top:6px"><b>理由：</b>不投入。①快照标记星数未核实，本次 API 复核 2★/0 fork/0 issue，属个人资源库，不是工具，更不是商业软件替代品；星数待核实且实际接近零。②与 fxcity-editor2 同源同一条知乎回答，『多少钱/收费』是答案语境里的行业收入讨论，不是采购意向（audit_notes 第 2 条）。③它的价值完全依附上游引擎（TransitFX / FXCity Editor）：上游没有用户与生态，它就没有独立市场；既补不了『阉割版』缺口，也不是『在线做不了的本地批处理』。④无 License，商用与再分发边界不清。</div>
+<ul>
+<li>不投入；除非上游编辑器形成真实用户社区并出现付费插件市场，才重新评估</li>
+</ul>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-28T08:53:04 · DSH 会话基于当日快照</div>
+</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://www.zhihu.com/api/v4/answers/2077454515498906205" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <h3>存量项目 · 只记增量（35）</h3>
 <p class="hint">这些项目以前出现过，本次不重复出卡；「本次变化」列只列实质增量，显示「—」表示本次没有新变化。</p>
 <table><thead><tr><th>项目</th><th>首现 / 次数</th><th class="num">基线 首→今</th><th class="num">星数 首→今</th><th class="num">今日提及</th><th>DSH 判定</th><th>本次变化</th></tr></thead><tbody>
-<tr><td><a href="https://github.com/XinaTian/MROffice" target="_blank" rel="noopener">MROffice</a> <span class="tag hi">★重点</span></td><td>2026-11-23 / 6</td><td class="num">44 → 50 (+1.2)</td><td class="num">2,065 → 5,047</td><td class="num">0</td><td><span class="tag red">不建议</span><div style="font-size:11px;color:#64748b">承继自 2026-11-27</div></td><td>星数 +594</td></tr>
-<tr><td><a href="https://github.com/opensetlabs/openset-llm" target="_blank" rel="noopener">openset-llm</a> <span class="tag hi">★重点</span></td><td>2026-11-26 / 3</td><td class="num">42 → 44 (+0.9)</td><td class="num">827 → 2,205</td><td class="num">0</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-27</div></td><td>星数 +473</td></tr>
-<tr><td><a href="https://github.com/solv4626/steam-achievement-manager-windows" target="_blank" rel="noopener">steam-achievement-manager-windows</a> <span class="tag hi">★重点</span></td><td>2026-11-26 / 3</td><td class="num">42 → 42 (+0.4)</td><td class="num">1,058 → 1,236</td><td class="num">0</td><td><span class="tag red">不建议</span><div style="font-size:11px;color:#64748b">承继自 2026-11-27</div></td><td>星数 +178</td></tr>
-<tr><td><a href="https://github.com/Basil0879/steam-game-idler" target="_blank" rel="noopener">steam-game-idler</a> <span class="tag hi">★重点</span></td><td>2026-11-26 / 3</td><td class="num">41 → 42 (+0.6)</td><td class="num">681 → 1,008</td><td class="num">0</td><td><span class="tag red">不建议</span><div style="font-size:11px;color:#64748b">承继自 2026-11-27</div></td><td>星数 +327</td></tr>
+<tr><td><a href="https://github.com/XinaTian/MROffice" target="_blank" rel="noopener">MROffice</a> <span class="tag hi">★重点</span></td><td>2026-11-23 / 6</td><td class="num">44 → 50 (+1.2)</td><td class="num">2,065 → 5,047</td><td class="num">0</td><td><span class="tag red">不建议</span></td><td>星数 +594</td></tr>
+<tr><td><a href="https://github.com/opensetlabs/openset-llm" target="_blank" rel="noopener">openset-llm</a> <span class="tag hi">★重点</span></td><td>2026-11-26 / 3</td><td class="num">42 → 44 (+0.9)</td><td class="num">827 → 2,205</td><td class="num">0</td><td><span class="tag mid">观察位</span></td><td>星数 +473</td></tr>
+<tr><td><a href="https://github.com/solv4626/steam-achievement-manager-windows" target="_blank" rel="noopener">steam-achievement-manager-windows</a> <span class="tag hi">★重点</span></td><td>2026-11-26 / 3</td><td class="num">42 → 42 (+0.4)</td><td class="num">1,058 → 1,236</td><td class="num">0</td><td><span class="tag red">不建议</span></td><td>星数 +178</td></tr>
+<tr><td><a href="https://github.com/Basil0879/steam-game-idler" target="_blank" rel="noopener">steam-game-idler</a> <span class="tag hi">★重点</span></td><td>2026-11-26 / 3</td><td class="num">41 → 42 (+0.6)</td><td class="num">681 → 1,008</td><td class="num">0</td><td><span class="tag red">不建议</span></td><td>星数 +327</td></tr>
 <tr><td><a href="https://github.com/zeromicro/go-zero" target="_blank" rel="noopener">go-zero</a></td><td>2026-11-12 / 17</td><td class="num">65 → 65</td><td class="num">3.3万 → 3.3万</td><td class="num">1</td><td><span class="tag red">不建议</span><div style="font-size:11px;color:#64748b">承继自 2026-11-27</div></td><td>—</td></tr>
 <tr><td><a href="https://github.com/monkeyWie/gopeed" target="_blank" rel="noopener">gopeed</a></td><td>2026-11-12 / 17</td><td class="num">65 → 65</td><td class="num">2.8万 → 2.8万</td><td class="num">0</td><td><span class="tag mid">观察位</span><div style="font-size:11px;color:#64748b">承继自 2026-11-27</div></td><td>—</td></tr>
 <tr><td><a href="https://github.com/NawfalMotii79/PLFM_RADAR" target="_blank" rel="noopener">PLFM_RADAR</a></td><td>2026-11-12 / 17</td><td class="num">65 → 65</td><td class="num">2.7万 → 2.7万</td><td class="num">0</td><td><span class="tag red">不建议</span><div style="font-size:11px;color:#64748b">承继自 2026-11-27</div></td><td>—</td></tr>
@@ -321,14 +338,14 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">不建议投入</div>
-<div><b>可行性：</b>4,614★（今日 API 核实，快照记 4,598，+816），485 fork，AGPL-3.0，TypeScript，仓库 179MB；最近提交为『Update the editors to … Exported from MR Note …』，即本仓库是其商业产品（mroffice.ai）编辑器的导出，官网在卖订阅、AI 额度与 embed SDK（npm mroffice-embed）。docx/xlsx/pptx/pdf 四端 OOXML 保真仍是十年量级工程，单人无法维护；OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。</div>
-<div style="margin-top:6px"><b>理由：</b>维持不投入（第 4 次复核）。增速 2,065→2,783→3,793→4,614，日增 +999→+816 已见顶回落，是曝光曲线而非买家信号；①缺口由厂商自己用订阅与 SDK 变现，第三方没有位置；②AGPL-3.0 阻断闭源二开与再分发；③提交信息证实仓库是从商业产品导出的展示层，二开等于免费替它做市场。从今天起不再重复复核，除非出现付费客户线索。</div>
+<div><b>可行性：</b>5,055★（今日 API 核实，快照 5,047；昨日 4,614，+441）、423 fork、2 open issue、209 watcher、AGPL-3.0、TypeScript、仓库 156MB；描述已改为『AI office suite + 每个编辑器内置 Copilot + MCP server + 一行 embed』，即厂商把开源仓当获客入口，商业产品 mroffice.ai 卖订阅、AI 额度与 embed SDK。docx/xlsx/pptx/pdf 四端 OOXML 保真仍是十年量级工程，单人无法维护；OnlyOffice / Univer / 葡萄城 / GcExcel 层层占位。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 no（第 5 次、也是最后一次逐日复核）。①增速 3,793→4,614→5,055，日增 +821→+441 继续回落，是曝光曲线不是买家信号；423 fork 却只有 2 个 issue，讨论热度远低于星数。②仓库描述写明『embed it in your app with one line』——厂商自己用订阅 + SDK 变现，第三方二开等于免费替它做市场。③AGPL-3.0 阻断闭源二开与再分发。④仍无任何付费客户线索。除非出现『有人愿为第三方 MROffice 集成付钱』的具体线索，不再逐日复核（audit_notes 第 6 条：星数高≠赚钱）。</div>
 <ul>
+<li>不再逐日复核；只有出现具体付费客户线索（企业名 / 金额 / 需求）才重开</li>
 <li>唯一残留场景是自有系统内嵌『只读预览』，那属于采购官方 SDK，不是可做的生意</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-28T08:53:04 · DSH 会话基于当日快照</div>
 </div>
-<div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-27（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/XinaTian/MROffice" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -356,18 +373,16 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh watch"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">观察位 · 暂不投入</div>
-<div><b>可行性：</b>1,733★（今日 API 核实，快照记 1,732；昨日 827，单日 +905）、165 fork（昨 69）、26 open issue（昨 8）、43 watcher、5 位贡献者；11-25 v0.1.0、11-26 v0.2.0（Release 无二进制资产）；MIT，C++，仓库 7.5MB。今日 #76 合入『256-bit kernels for CPUs without AVX-512』并加 --portable：AVX2-only 的机器（Intel 12 代及以后、老 Core、AMD Zen1–3）现在也能起，昨天写的『必须 AVX-512』硬门槛已被解除（AVX2 速度官方未实测）；仍限 Linux x86-64（Windows 走 WSL2），ARM/鲲鹏不支持。真正的工程量在 PrismML 三元模型的 graft 与 MTP 头、安装器与 bench 的健壮性——今天 10 多个 fix PR 全是 install/graft/model/bench 的边界情况，说明『让它在一台陌生机器上稳定跑起来』本身就是最难的一步，而这恰好是可收钱的交付点。竞品：llama.cpp / ik_llama.cpp、Ollama、LM Studio、PrismML 自己的分支。</div>
-<div style="margin-top:6px"><b>理由：</b>维持 watch，不投入。①+905★/天是传播曲线不是买家信号：11-23~11-26 有多家技术站（trendshift 记为 7 天 +1,171★、explainx、lavx、aiboss88 等）转载 + GitHub 趋势，符合 audit_notes 第 6 条『高星≠赚钱』；fork 69→165、issue 8→26 同步增长说明技术关注真实（不是 11-23 那批刷星仓），但关注者是『想省掉 API 账单』的自托管开发者。②商业截面仍为零：MIT、无商业版、无托管服务、无赞助入口，README 卖点明写 no per-token fee——买家付费的动机恰恰是『不付钱』。③硬件门槛今天刚被 #76 解除，提高了可交付性，但也意味着差异化从『独家能力』退到『交付与调优』，这不是软件订阅的生意。④国内需求零证据（知乎 0 提及），且信创 ARM 机型跑不了，目标客户只能是手里有 x86 Linux 服务器的公司。</div>
+<div><b>可行性：</b>2,210★（今日 API 核实，快照 2,205；昨日 1,733，+477）、211 fork（昨 165）、18 open issue（昨 26）、46 watcher、Python / MIT、7.7MB，11-27 仍有提交；仍限 Linux x86-64（Windows 走 WSL2），ARM/鲲鹏不支持。真正的工程量在 PrismML 三元模型的 graft 与 MTP 头、安装器与 bench 的健壮性——『让它在陌生机器上稳定跑起来』本身就是最难的一步，也是唯一可收钱的交付点。竞品：llama.cpp / ik_llama.cpp、Ollama、LM Studio、PrismML 自家分支。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 watch，不投入。①+477★/天较昨日 +905 明显减速，符合传播曲线衰减（audit_notes 第 6 条）；fork 165→211、issue 26→18（有人在处理）说明技术关注真实，但关注者是『想省 API 账单』的自托管开发者。②商业截面仍为零：MIT、无商业版、无托管服务、无定价页，README 卖点就是 no per-token fee——买家付费的动机恰恰是『不付钱』。③国内零提及（知乎 0 次），信创 ARM 跑不了，客户只能是手里有 x86 Linux 服务器的公司。④11-30 的验证期限只剩 2 天，仍无具体客户场景与机器型号。</div>
 <ul>
-<li>先拿 1 台客户真实 x86-64 Linux 机器（AVX2 可，AVX-512 更好）实测：27B/8GB 下 17–20 tok/s 是否成立、长上下文内存是否够</li>
-<li>只报『私有化部署 + 接到客户自己的文档抽取/客服/内部检索流程』的一次性 1–3 万元，不卖引擎、不做分发、不承诺 SLA</li>
-<li>盯 v0.3 是否出现商业版/托管/定价页：作者一旦自己开始卖服务，第三方交付位就消失</li>
-<li>11-30 前拿不到 1 个具体客户场景（含机器型号与要接的业务）→ 降 no，不再跟踪</li>
+<li>11-30 前拿不到 1 个具体客户场景（机器型号 + 要接的业务）→ 降 no，不再跟踪</li>
+<li>只报『私有化部署 + 接到客户文档抽取/客服/内部检索流程』的一次性 1–3 万元，不卖引擎、不做分发、不承诺 SLA</li>
+<li>盯 v0.3 是否出现商业版/托管/定价页：作者自己开始卖服务，第三方交付位即消失</li>
 <li>星数曲线不再作为判据，只认『有人为部署付钱』</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-27T08:55:37 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-28T08:53:04 · DSH 会话基于当日快照</div>
 </div>
-<div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-27（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/opensetlabs/openset-llm" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 <div class="dir"><div class="dir-head"><div>
@@ -395,14 +410,13 @@ footer p{margin:5px 0}
 </ul></div>
 <div class="dsh no"><div class="dh">DSH 判定 · 可行性与是否可投入</div>
 <div class="verdict">不建议投入</div>
-<div><b>可行性：</b>1,058★（API 核实），MIT，Rust + Shell/NSIS，7.4MB；2026-11-23 21:31 建仓，push 时间同为 21:31，0 fork / 0 open issue / 3 watcher，v4.1.8，同一 libvlc.dll 模板。功能是 Steam 成就解锁/回锁与游戏统计修改（SAM 类）。技术上『读本地 Steam 数据 + 调 API 改状态』是现成做法，已有开源实现（SAM、Steam Achievement Manager 的多个分支），没有技术壁垒。</div>
-<div style="margin-top:6px"><b>理由：</b>不投入。①属于同一批刷星仓（见 clipboard 条目），星数不可信；②功能是改成就/改统计，违反 Steam 订阅协议，成就与统计回写会影响账号信誉，账号被封的风险由使用者承担——做成收费品等于把平台风险转嫁给买家；③免费同类已有多年，没有付费截面；④无付费意向证据。</div>
+<div><b>可行性：</b>1,236★（API 核实，与快照一致；昨日 1,058，+178）、1 fork、0 open issue、81 watcher、MIT、Rust + NSIS、7.4MB；2026-11-23 21:31 建仓，唯一一次 push 在 21:32，此后 5 天无任何提交。功能是 Steam 成就解锁/回锁与游戏统计修改（SAM 类），『读本地 Steam 数据 + 调 API 改状态』是现成做法，无技术壁垒，免费同类已有多年。</div>
+<div style="margin-top:6px"><b>理由：</b>维持 no。①今日 +178★，但 0 提交、1 fork、0 issue、81 watcher——一个 5 天没动过的仓库继续涨星，是 11-23 21:19–21:40 四账号批量建仓（同 README 模板、同 libvlc.dll 要求）那批刷星仓的延续，星数不作证据（audit_notes 第 6 条）。②改成就/改统计违反 Steam 订阅协议，成就与统计回写影响账号信誉，封号风险由买家承担。③免费 SAM 类实现已多年，没有付费截面。④快照 flags 明确『未发现付费/成交意向词』。</div>
 <ul>
-<li>不做任何 Steam 账号数据修改/自动化工具：平台条款与封号风险不可控，收益与风险不成比例</li>
+<li>不做任何 Steam 账号数据修改/自动化工具；该批次（clipboard / achievement / idler / mod-manager）整体列入黑名单，不再跟踪</li>
 </ul>
-<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-26T08:54:18 · DSH 会话基于当日快照</div>
+<div style="margin-top:8px;font-size:11.5px;opacity:.75">判定时间 2026-11-28T08:53:04 · DSH 会话基于当日快照</div>
 </div>
-<div style="margin-top:8px;font-size:11.5px;color:#64748b">判定承继自 2026-11-27（存量项目以首次/上次判定为准，不重复判定）</div>
 <div style="margin-top:10px;font-size:12.5px"><a href="https://github.com/solv4626/steam-achievement-manager-windows" target="_blank" rel="noopener">查看今日知乎原文 →</a></div>
 </div></div>
 </section>
@@ -487,11 +501,14 @@ footer p{margin:5px 0}
 <li>星数高 ≠ 赚钱；一年才等到第一个付费用户是真实存在的情况</li>
 </ul></div></section>
 <section><h2><span class="num">8</span>DSH 复核说明</h2>
-<div class="card">本日未进行 DSH 复核（GUI 会话未在线或复核层尚未启用）。以上项目均为<b>机器基线 + 待 DSH 判定</b>，不含可行性与投入建议，请勿直接当作决策依据。</div>
+<div class="card good">
+<p style="font-size:12px;color:#059669;margin-bottom:8px">复核时间 2026-11-28T08:53:31 · DSH 会话基于当日快照人工判断</p>
+<p>DSH 已对具体项目给出可行性判定，详见各项目判定块。</p>
+</div>
 </section>
 <footer>
 <p><b>免责声明</b>：本报告仅作自动化研究与信息整理，不构成投资、副业、创业或任何商业决策建议；数据为平台公开指标的瞬时快照，可能随时间变化，且不保证完整准确。</p>
-<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>机器判定（本日未复核）</b>。</p>
+<p>生成方式：A 段 Windows 计划任务无人值守采集/渲染/推送；B 段 DSH 会话在线时复核。本报告模式：<b>已复核</b>。</p>
 <p>数据日期 2026-11-28 · 生成于 2026-11-28T08:30:51 · 数据源 知乎 / GitHub 趋势 · 低频调用、不绕过平台风控。</p>
 </footer>
 </div></body></html>
